@@ -369,6 +369,11 @@ body::after {
 }
 
 
+.container_center_home {
+  width: auto;
+  padding-bottom: -20px;
+  height: 1500px;
+}
 
 .wrapper {
   display: grid;
@@ -376,9 +381,12 @@ body::after {
   grid-template-columns: 54% 46%;
   /* justify-content: center; */
   align-content: center;
-  height: 970px;
+  margin-top: 100px;
+  padding-bottom: 10px;
+  // margin-bottom: 100px;
+  height: 1300px;
   /* width: 100%; */
-  background: url(../images/torn_edge_bkgrd_1000.jpg);
+  background: url(../images/torn_edge_bkgrd_2080x1300.jpg);
 
   /* size of background image is 1600 x 1000 px */
   /* background-size: 1600px 970px; */
@@ -390,7 +398,8 @@ body::after {
   /* margin-left: 220px; */
   float: right;
   width: 650px;
-  margin-top: 605px;
+  margin-right: -30px;
+  margin-top: 590px;
   /* margin-right: -140px; */
   height: auto;
   position: relative;
@@ -399,8 +408,8 @@ body::after {
 
 #img_claire {
   position: absolute;
-  top: 96px;
-  left: 700px;
+  top: 200px;
+  left: 720px;
   width: 280px;
   padding: 16px;
   border: 3px solid #d2b96e;
@@ -411,10 +420,10 @@ body::after {
 
 #zodiac_leo {
   position: absolute;
-  height: auto;
-  width: auto;
-  top: -96px;
-  left: 90px;
+  height: 55%;
+  width: 28%;
+  top: -116px;
+  left: 150px;
   opacity: 0.3;
 
 }
@@ -426,8 +435,8 @@ body::after {
   justify-content: center;
   align-content: center;
   width: 300px !important;
-  height: 900px;
-  margin-top: 630px;
+  height: 940px;
+  margin-top: 570px;
   margin-left: 54px;
   padding-bottom: 300px;
   float: left;
@@ -435,8 +444,10 @@ body::after {
 }
 
 div#one {
-  /* flex: 1; */
   flex-direction: flex-start;
+  margin-left: 50px;
+  // margin-left: 12px;
+  // text-align:left;
 }
 
 img#intro_2_claire {
@@ -447,20 +458,21 @@ img#intro_2_claire {
 }
 
 div#one hr {
+  margin-left: 0!important;
+  margin-bottom: 50px;
   width: 80px;
-  margin-left: 50px;
-  margin-top: 20px;
   border: .8px solid #d2b96e;
   background: #d2b96e;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 
 }
 
 div#one #first_p {
   font-size: 2em;
-  margin-left: 34px;
-  margin-top: -50px;
-  width: 100px;
+  padding-bottom: 20px;
+  // margin-left: 34px;
+  // margin-top: -20px;
+  // width: 100px;
   font-family: "Tenor Sans";
 
 }
@@ -468,10 +480,11 @@ div#one #first_p {
 .intro_2 #second_p {
   font-family: Quentin;
   font-size: 2em;
-  width: 100px;
-  margin-left: 40px;
+  padding-bottom: 30px;
+  // width: 100px;
+  // margin-left: 40px;
   padding-top: 20px;
-  padding-bottom: 0px;
+  // padding-bottom: 0px;
 }
 
 div#two {
@@ -497,8 +510,8 @@ div#do_this {
 div#three {
   flex: 1;
   width: 300px;
-  margin-left: 0px;
-  margin-top: 30px;
+  margin-left: 10px;
+  margin-top: 16px;
 }
 
 div#three a {
@@ -532,7 +545,7 @@ div#two p {
 
 #last_p {
   margin-left: 12px;
-  margin-top: -20px;
+  // margin-top: -40px;
   text-decoration: none;
   color: black;
 }
@@ -542,41 +555,10 @@ div#two p {
 }
 
 
-/* .intro_2 > div {
-  display: grid;
-  background-color: white;
-  padding: 30px;
-  font-size: .9em;
-  align-items: center;
-  justify-items: left;
-  line-height: 1.5em;
-  font-family: "Lora";
-  color: rgb(96, 96, 96);
-
-} */
-
-/* div.claire_sig {
-  display: block;
-  margin-right: 86%;
-  margin-left: 14%;
-  margin-bottom: 60px;
-  margin-top: -20px;
-} */
 
 
 
-
-/* #more_about_me>a:hover::before {
-  visibility: hidden;
-}  */
-
-/* h3#more_about_me:hover {
-  background-color: rgb(207, 100, 120);
-}  */
-
-/* #more_about_me>a:hover {
-  color: rgb(255, 248, 214);
-}  */
+// Styling for Good Fit Area Home Page
 
 div#good_fit {
   display: flex;
@@ -648,9 +630,6 @@ div#good_fit p {
   justify-content: center;
   align-items: center;
   padding-bottom: 40px;
-  padding-top: 20px;
-  width: 100%;
-  height: auto;
 
 }
 
@@ -1097,7 +1076,6 @@ img#frida {
 
 #contact_collage {
   margin-top: 220px;
-  margin-top: 140px;
   max-width: 100%;
   width: 100%;
   height: auto;
