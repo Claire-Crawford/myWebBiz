@@ -324,7 +324,6 @@ body::after {
   display: grid;
   position: relative;
   grid-template-columns: 54% 46%;
-  /* justify-content: center; */
   align-content: center;
   margin-top: 100px;
   padding-bottom: 10px;
@@ -413,7 +412,6 @@ div#one #first_p {
 div#two {
   flex: 1;
   background-color: transparent;
-  /* background-color: #fbf9ee; */
   vertical-align: middle;
   margin-left: 50px;
 }
@@ -425,9 +423,6 @@ div#do_this {
   width: 100px;
 }
 
-/* div#two p {
-  width: 300px !important;
-} */
 div#three {
   flex: 1;
   width: 300px;
@@ -472,14 +467,14 @@ div#two p {
   color: #16c0b7;
 }
 
-#stars_zodiac {
+#moon_stars {
   position: relative;
   display: inline-block;
-  margin-right: 60px;
+  margin-right: -20px;
   float: right;
-  width: 420px;
-  margin-top: -140px;
-  opacity: 0.5;
+  width: 990px;
+  margin-top: -180px;
+  opacity: 0.3;
 }
 
 .good_wrapper {
@@ -488,17 +483,23 @@ div#two p {
   justify-content: center;
 }
 
-.good_wrapper h3 {
-  text-align: center;
-  font-size: 2.2em;
-  font-family: Quentin;
-}
-
 .wrap_goodFit h2 {
   font-family: Quentin;
   font-size: 2.2em;
   text-align: center;
   margin-bottom: 100px;
+}
+
+.good_wrapper h3 {
+  text-align: center;
+  font-size: 2.2em;
+  font-family: Quentin;
+  color: #16c0b7;
+}
+
+.good_fit_hide_me hr {
+  color: black;
+  margin-top: -20px;
 }
 
 .good_fit_hide_me {

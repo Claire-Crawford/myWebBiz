@@ -192,14 +192,6 @@ body::after {
 
 
 
-
-
-
-
-
-
-
-
 // underline from center on navigation links 
 #menu a {
   -webkit-transform: translateZ(0);
@@ -229,11 +221,6 @@ body::after {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-
-
-
-
-
 
 #moodboard {
   // position: relative;
@@ -378,7 +365,6 @@ body::after {
   display: grid;
   position: relative;
   grid-template-columns: 54% 46%;
-  /* justify-content: center; */
   align-content: center;
   margin-top: 100px;
   padding-bottom: 10px;
@@ -469,9 +455,6 @@ div#one hr {
 div#one #first_p {
   font-size: 2em;
   padding-bottom: 20px;
-  // margin-left: 34px;
-  // margin-top: -20px;
-  // width: 100px;
   font-family: "Tenor Sans";
 
 }
@@ -480,16 +463,12 @@ div#one #first_p {
   font-family: Quentin;
   font-size: 2em;
   padding-bottom: 30px;
-  // width: 100px;
-  // margin-left: 40px;
   padding-top: 20px;
-  // padding-bottom: 0px;
 }
 
 div#two {
   flex: 1;
   background-color: transparent;
-  /* background-color: #fbf9ee; */
   vertical-align: middle;
   margin-left: 50px;
 
@@ -501,10 +480,6 @@ div#do_this {
   margin-top: -20px;
   width: 100px;
 }
-
-/* div#two p {
-  width: 300px !important;
-} */
 
 div#three {
   flex: 1;
@@ -559,18 +534,32 @@ div#two p {
 
 // Styling for Good Fit Area Home Page
 
-#stars_zodiac {
+// #stars_zodiac {
+//   position: relative;
+//   display: inline-block;
+//   margin-right: 60px;
+//   float: right;
+//   width: 420px;
+//   margin-top: -140px;
+//   opacity: 0.5;
+// }
+
+// #moon_stars {
+//   opacity: 0.3;
+//   margin-top: -90px;
+// }
+
+#moon_stars {
   position: relative;
   display: inline-block;
-  margin-right: 60px;
+  margin-right: -20px;
   float: right;
-  width: 420px;
-  margin-top: -140px;
-  opacity: 0.5;
+  width: 990px;
+  margin-top: -180px;
+  opacity: 0.3;
 
-
-  // opacity: 0.6;
 }
+
 
 .good_wrapper {
   // position: relative;
@@ -579,13 +568,6 @@ div#two p {
   justify-content: center;
 }
 
-.good_wrapper h3{
-text-align: center;
-font-size: 2.2em;
-font-family: Quentin;
-}
-
-
 .wrap_goodFit h2 {
   font-family: Quentin;
   font-size: 2.2em;
@@ -593,11 +575,24 @@ font-family: Quentin;
   margin-bottom: 100px;
 }
 
+.good_wrapper h3{
+  text-align: center;
+  font-size: 2.2em;
+  font-family: Quentin;
+  color: #16c0b7;
+
+  }
+  
+ .good_fit_hide_me hr{
+    color: black;
+    margin-top: -20px;
+  }
+
 .good_fit_hide_me {
   position: relative;
   margin: 0px 60px 150px 60px;
   // flex-basis: calc(14%);  
-  height:  340px;
+  height: 340px;
   width: 360px;
   // text-align: center;
   border: 8px solid rgba(207, 188, 100, 0.4);
