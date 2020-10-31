@@ -472,46 +472,66 @@ div#two p {
   color: #16c0b7;
 }
 
-.intro_centerHome {
-  background-color: white;
-}
-
-.wrap_goodFit {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  height: 600px;
-  align-items: center;
-}
-
 #stars_zodiac {
-  position: absolute;
-  width: 390px;
-  top: -170px;
-  right: 80px;
-  opacity: 0.6;
+  position: relative;
+  display: inline-block;
+  margin-right: 60px;
+  float: right;
+  width: 420px;
+  margin-top: -140px;
+  opacity: 0.5;
 }
 
-.wrap_goodFit p {
-  line-height: 1.4em;
-  font-size: 1.2em;
-  /* font-family: 'Tenor Sans'; */
-  font-family: "Ernestine Pro Light";
-  border: 8px solid rgba(207, 188, 100, 0.4);
-  padding: 30px;
-  height: 200px;
-  width: 260px;
-  color: #606060;
+.good_wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.good_wrapper h3 {
   text-align: center;
-  vertical-align: middle;
+  font-size: 2.2em;
+  font-family: Quentin;
+}
+
+.wrap_goodFit h2 {
+  font-family: Quentin;
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 .good_fit_hide_me {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  margin: 0px 60px 150px 60px;
+  height: 340px;
+  width: 360px;
+  border: 8px solid rgba(207, 188, 100, 0.4);
+}
+
+.good_wrapper p {
+  font-size: 18px;
+  padding: 50px;
+  color: #606060;
+  font-family: "tenor sans";
+  line-height: 25px;
+  position: absolute;
+  top: 18%;
+  text-align: center;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0.25;
+    line-height: 400px;
+  }
+  to {
+    opacity: 1;
+    line-height: 25px;
+  }
+}
+.slide-up {
+  animation: slide-up 2s;
 }
 
 /* Back to top bird styling */

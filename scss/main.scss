@@ -457,7 +457,7 @@ img#intro_2_claire {
 }
 
 div#one hr {
-  margin-left: 0!important;
+  margin-left: 0 !important;
   margin-bottom: 50px;
   width: 80px;
   border: .8px solid #d2b96e;
@@ -559,57 +559,77 @@ div#two p {
 
 // Styling for Good Fit Area Home Page
 
-.intro_centerHome {
-  background-color: white;
-}
-.wrap_goodFit {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  height: 600px;
-  align-items: center;  
-  
-}
-
 #stars_zodiac {
-  position: absolute;
-  width: 390px;
-  top: -170px;
-  right: 80px;
-  opacity: 0.6;
+  position: relative;
+  display: inline-block;
+  margin-right: 60px;
+  float: right;
+  width: 420px;
+  margin-top: -140px;
+  opacity: 0.5;
+
+
+  // opacity: 0.6;
 }
 
-.wrap_goodFit p {
-  line-height: 1.4em;
-  font-size: 1.2em;
-  /* font-family: 'Tenor Sans'; */
-  font-family: 'Ernestine Pro Light';
-  border: 8px solid rgba(207, 188, 100, 0.4);
-  padding: 30px;
-  height: 200px;
-  width:260px;
-  color: #606060;
+.good_wrapper {
+  // position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.good_wrapper h3{
+text-align: center;
+font-size: 2.2em;
+font-family: Quentin;
+}
+
+
+.wrap_goodFit h2 {
+  font-family: Quentin;
+  font-size: 2.2em;
   text-align: center;
-  vertical-align: middle;
-
+  margin-bottom: 100px;
 }
-
-
-// .good_fit_hide_me {
-//   opacity: 0;
-
-// }
-
 
 .good_fit_hide_me {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-
+  position: relative;
+  margin: 0px 60px 150px 60px;
+  // flex-basis: calc(14%);  
+  height:  340px;
+  width: 360px;
+  // text-align: center;
+  border: 8px solid rgba(207, 188, 100, 0.4);
 }
+
+.good_wrapper p {
+  font-size: 18px;
+  padding: 50px;
+  color: #606060;
+  font-family: "tenor sans";
+  line-height: 25px;
+  position: absolute;             
+   top: 18%; 
+  //  transform: translate(0, -50%);
+   text-align: center;
+ }
+
+ @keyframes slide-up {
+  from {
+      opacity: .25;
+      line-height: 400px;
+  }
+  to {
+      opacity: 1;
+      line-height: 25px;
+  }
+}
+
+.slide-up {
+  animation: slide-up 2s;
+}
+
 
 
 
@@ -1023,7 +1043,7 @@ img#frida {
   max-width: 100%;
   width: 100%;
   height: auto;
-  
+
 }
 
 #contact_space_below_banner {
@@ -1483,14 +1503,15 @@ img#gold_star {
 footer {
   box-sizing: border-box;
   background: url(../images/torn_edge_bkgrd_2080x1300.jpg);
-  line-height:1.8em;
+  line-height: 1.8em;
 }
 
 .container {
   display: grid;
   height: 440px;
   align-items: center;
-  justify-items: center; /* adjusted */
+  justify-items: center;
+  /* adjusted */
   width: 100%;
   grid-column-gap: 60px;
   position: relative;
@@ -1507,12 +1528,12 @@ footer {
   font-family: "Montserrat Light"
 }
 
-.nav_col1  {
+.nav_col1 {
   align-items: center;
   justify-content: center;
 }
 
-.row_footer  h5{
+.row_footer h5 {
   font-family: "tenor sans";
   font-size: 1.2em;
   margin-bottom: 20px;
@@ -1530,7 +1551,7 @@ footer {
   float: left;
 }
 
-.left  {
+.left {
   width: 60%;
 }
 
@@ -1556,7 +1577,7 @@ footer {
   bottom: 0;
   left: 320px;
   font-family: "tenor sans";
-  
+
 }
 
 
