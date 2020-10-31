@@ -34,7 +34,6 @@ footer,
 th {
   margin: 0;
   padding: 0;
-  font-size: 16px;
   text-decoration: none;
   list-style-type: none;
   /* background: transparent;
@@ -359,8 +358,6 @@ body::after {
 
 #zodiac_leo {
   position: absolute;
-  height: 55%;
-  width: 28%;
   top: -116px;
   left: 150px;
   opacity: 0.3;
@@ -481,7 +478,6 @@ div#good_fit {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-evenly;
-  height: auto;
 }
 
 #stars_zodiac {
@@ -495,7 +491,7 @@ div#good_fit {
 div#good_fit > div {
   background-color: white;
   width: 300px;
-  height: 220px;
+  height: 420px;
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
@@ -1342,130 +1338,82 @@ img#gold_star {
 }
 
 /* STYLING FOOTER */
-#footer_leftside {
-  position: absolute;
-  margin-left: 100px;
-  margin-top: 170px;
-}
-
-#creative_solution_leftside_footer {
-  font-family: "Emma Signature";
-  font-family: "Quentin";
-  font-size: 1.7em;
-}
-
-/* #hand_holding_stars {
-  width: 160px;
-  margin-top: 70px;
-  margin-bottom: 0;
-  opacity: 0.6;
-} */
-/* #footer_info {
-  width: 100%; 
-  text-align: center;
-  height: 350px;
-  position: relative;
-
-} */
-/* #footer_beneath_hands { */
-/* font-family: "Tenor Sans";
-  font-size: 2.5em;
-  color: rgb(69,69,69); 
-
-
-} /*
-
-/* #footer_beneath_signature {
-  font-family: "Tenor sans";
-  font-size: 1.1em;
-
-} */
-/* #footer_beneath_signature_2 {
-  font-family: Quentin;
-  font-size: 2em;
-  margin-top: -20px;
-} */
-/* #sig_footer_img {
-  text-align: center;
-  width: 220px;
-  margin-top: 10px;
-  float: left;
-} */
 footer {
-  width: 100%;
-  /* position: relative; */
-  height: 400px;
+  box-sizing: border-box;
+  background: url(../images/torn_edge_bkgrd_2080x1300.jpg);
+  line-height: 1.8em;
 }
 
-#footer_bottom {
-  background: url(../images/torn_edge_bkgrd_1000.jpg);
+.container {
+  display: grid;
+  height: 440px;
+  align-items: center;
+  justify-items: center;
+  /* adjusted */
+  width: 100%;
+  grid-column-gap: 60px;
   position: relative;
-  height: 400px;
-  width: 100%;
 }
 
-#footer_content {
-  display: flex;
-  flex-direction: row;
+.row_footer {
+  width: 80%;
+  margin-top: 60px;
+  font-family: "tenor sans";
+  color: #606060;
+}
+
+.row_footer a {
+  font-family: "Montserrat Light";
+}
+
+.nav_col1 {
+  align-items: center;
+  justify-content: center;
+}
+
+.row_footer h5 {
+  font-family: "tenor sans";
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.row_footer h2 {
+  margin-top: 50px;
+  padding-bottom: 16px;
+  font-size: 1.7em;
+  font-family: Quentin;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 20%;
+}
+
+.middle {
+  width: 20%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#copyright {
+  width: 50%;
+  margin-bottom: 0;
   position: absolute;
   bottom: 0;
-  flex-wrap: nowrap;
-  height: 40px;
-  width: 100%;
-  justify-content: space-around;
-}
-
-#footer_left {
-  float: left;
-  width: 300px;
-}
-
-#footer_right {
-  float: right;
-  width: 300px;
-}
-
-#footer_middle {
-  display: inline-block;
-  /* margin:0 auto; */
-  width: 300px;
-}
-
-#footer_logo {
-  width: auto;
-  margin: 0 auto;
-}
-
-#logo_in_footer {
-  width: 200px;
-  margin-top: -14px;
-}
-
-/* #footer hr {
-  border: .1px solid #d2b96e;
-  background: #d2b96e;
-  width: 660px;
-  margin-bottom: 20px;
-
-} */
-#footer a:link {
-  color: #636363;
-  text-decoration: none;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-#footer a:visited {
-  color: #636363;
-}
-
-#footer a:hover {
-  text-decoration: none;
-  color: black;
-}
-
-#footer a:active {
-  color: #fff;
+  left: 320px;
+  font-family: "tenor sans";
 }
 
 /* More About Me underline effect */
