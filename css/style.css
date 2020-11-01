@@ -406,7 +406,8 @@ div#one #first_p {
   font-family: Quentin;
   font-size: 2em;
   padding-bottom: 30px;
-  padding-top: 20px;
+  padding-top: 24px;
+  color: #606060;
 }
 
 div#two {
@@ -1008,16 +1009,6 @@ textarea {
   letter-spacing: 1px;
 }
 
-/* #phoneBox {
-  width: 320px;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-left: 6px;
-  padding-bottom: 8px;
-  background-color: rgba(224, 224, 224, 0.3);
-} */
 #date {
   width: 320px;
   height: 15px;
@@ -1088,17 +1079,13 @@ div#submit_contact {
   align-items: center;
   justify-content: center;
   background: transparent;
+  height: 500px;
 }
 
 #submit_contact input[type=button] {
   text-decoration: none;
   cursor: pointer;
-  /* padding: 12px 30px !important; */
-  /* background: rgb(69, 69, 69) !important; */
-  /* border: 2px solid rgb(69, 69, 69); */
   transition: 0.3s !important;
-  /* font-family: 'Tenor Sans'; */
-  /* font-family: 'Ernestine Pro Light'; */
   font-family: Quentin;
   color: black;
   color: #16c0b7;
@@ -1183,10 +1170,6 @@ div#submit_contact {
 }
 
 /* Styling Services Page */
-#service_dummy_space > div {
-  height: 1000px;
-}
-
 #service_collage {
   margin-top: 220px;
   max-width: 100%;
@@ -1235,12 +1218,6 @@ img#gold_star {
   font-size: 1.5em;
 }
 
-#services_stuff_here {
-  height: 800px;
-  width: 100%;
-  background-color: white;
-}
-
 /* Styling Blog Page */
 #blog_collage {
   margin-top: 220px;
@@ -1284,10 +1261,16 @@ img#gold_star {
   font-size: 1.6em;
 }
 
-#blog_stuff_here {
-  height: 800px;
+.blog_container {
   width: 100%;
-  background-color: white;
+  margin: auto;
+  justify-content: middle;
+  text-align: center;
+}
+
+.blog_container img {
+  width: 70%;
+  padding: 140px 40px 140px 40px;
 }
 
 /* STYLING FOOTER */
@@ -1299,7 +1282,7 @@ footer {
 
 .container {
   display: grid;
-  height: 440px;
+  height: 360px;
   align-items: center;
   justify-items: center;
   width: 100%;
