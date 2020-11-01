@@ -309,7 +309,6 @@ body::after {
   color: #d2b96e;
   font-size: 0.9em;
   margin-top: 8px;
-  padding-bottom: 70px;
   text-align: center;
   letter-spacing: 1px;
 }
@@ -391,21 +390,23 @@ img#intro_2_claire {
 div#one hr {
   margin-left: 0 !important;
   margin-bottom: 50px;
-  width: 80px;
+  width: 108px;
   border: 0.8px solid #d2b96e;
   background: #d2b96e;
 }
 
 div#one #first_p {
-  font-size: 2em;
+  font-size: 3.3em;
   padding-bottom: 20px;
   font-family: "Tenor Sans";
+  font-family: Quentin;
+  color: #03aab6;
 }
 
 .intro_2 #second_p {
-  font-family: Quentin;
-  font-size: 2em;
-  padding-bottom: 30px;
+  font-family: "tenor sans";
+  font-size: 1.5em;
+  padding-bottom: 20px;
   padding-top: 24px;
   color: #606060;
 }
@@ -455,17 +456,21 @@ div#two p {
   /* font-family: 'Lora'; */
   /* font-style: italic; */
   /* font-family: 'Tenor Sans'; */
-  color: #363d3c;
+  color: #606060;
 }
 
 #last_p {
   margin-left: 12px;
   text-decoration: none;
   color: black;
+  font-family: Quentin;
+  font-size: 2.2em;
 }
 
 #last_p:hover {
   color: #16c0b7;
+  color: #0a97a1;
+  color: #03aab6;
 }
 
 #stars_zodiac {
@@ -495,6 +500,7 @@ div#two p {
   font-size: 2.2em;
   font-family: Quentin;
   color: #16c0b7;
+  color: #03aab6;
 }
 
 .good_fit_hide_me hr {
@@ -900,7 +906,6 @@ img#frida {
   height: 148px;
   justify-content: center;
   align-items: center;
-  background-color: #EADFBD;
   background-color: #fbf9ee;
 }
 
@@ -922,11 +927,9 @@ img#contact_shine {
   margin-left: -40px;
 }
 
-#white_box > h2 {
+#white_box h2 {
   flex: 1;
-  color: white;
-  color: #16c0b7;
-  /* color: #0892A5; */
+  color: #03aab6;
   font-family: Lora;
   text-align: center;
   margin-top: 20px;
@@ -1087,8 +1090,7 @@ div#submit_contact {
   cursor: pointer;
   transition: 0.3s !important;
   font-family: Quentin;
-  color: black;
-  color: #16c0b7;
+  color: #03aab6;
   letter-spacing: -0.009px;
   text-transform: none;
   font-size: 2.6em;
@@ -1157,11 +1159,9 @@ div#submit_contact {
   background-color: white;
 }
 
-#white_box > h2 {
+#white_box h2 {
   flex: 1;
-  color: white;
-  color: #16c0b7;
-  /* color: #0892A5; */
+  color: #03aab6;
   font-family: Lora;
   text-align: center;
   margin-top: 20px;
@@ -1206,10 +1206,9 @@ img#gold_star {
   margin-bottom: -10px;
 }
 
-#white_box > h2 {
+#white_box h2 {
   flex: 1;
-  color: white;
-  color: #16c0b7;
+  color: #03aab6;
   /* color: #0892A5; */
   font-family: Lora;
   text-align: center;
@@ -1311,7 +1310,7 @@ footer {
 
 .row_footer h5 {
   font-family: "tenor sans";
-  color: #16c0b7;
+  color: #03aab6;
   font-size: 0.9em;
   margin-bottom: 10px;
   text-align: center;
