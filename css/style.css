@@ -290,13 +290,7 @@ body::after {
   /* font-family: "Ernestine Pro Light";
   font-family: "Montserrat Light"; */
   font-family: "Tenor sans";
-  /* color: #363d3c; */
-  color: #696969;
-  color: #808080;
-  color: rgba(0, 0, 0, 0.6);
-  /* font-weight: lighter;
-  letter-spacing: 2px; */
-  /* color: #AC985B; */
+  color: #636363;
   font-size: 1.6em;
   width: 930px;
   text-align: center;
@@ -408,7 +402,7 @@ div#one #first_p {
   font-size: 1.5em;
   padding-bottom: 20px;
   padding-top: 24px;
-  color: #606060;
+  color: #636363;
 }
 
 div#two {
@@ -451,12 +445,9 @@ div#two p {
   font-size: 0.9em;
   width: 370px;
   text-align: justify;
-  /* font-family: "Montserrat Regular"; */
-  font-family: "Ernestine Pro Light";
-  /* font-family: 'Lora'; */
   /* font-style: italic; */
-  /* font-family: 'Tenor Sans'; */
-  color: #606060;
+  font-family: "Tenor Sans";
+  color: #636363;
 }
 
 #last_p {
@@ -468,8 +459,6 @@ div#two p {
 }
 
 #last_p:hover {
-  color: #16c0b7;
-  color: #0a97a1;
   color: #03aab6;
 }
 
@@ -493,13 +482,13 @@ div#two p {
   font-size: 2.2em;
   text-align: center;
   margin-bottom: 100px;
+  margin-top: -60px;
 }
 
 .good_wrapper h3 {
   text-align: center;
   font-size: 2.2em;
   font-family: Quentin;
-  color: #16c0b7;
   color: #03aab6;
 }
 
@@ -513,13 +502,13 @@ div#two p {
   margin: 0px 60px 150px 60px;
   height: 340px;
   width: 360px;
-  border: 8px solid rgba(210, 185, 110, 0.7);
+  border: 8px solid rgba(210, 185, 110, 0.5);
 }
 
 .good_wrapper p {
   font-size: 18px;
   padding: 50px;
-  color: #606060;
+  color: #636363;
   font-family: "tenor sans";
   line-height: 25px;
   position: absolute;
@@ -564,7 +553,6 @@ div#two p {
   height: 148px;
   justify-content: center;
   align-items: center;
-  background-color: #EADFBD;
   background-color: #fbf9ee;
 }
 
@@ -593,8 +581,8 @@ img#about_awesome {
 
 .about_h2 {
   flex: 1;
-  color: #16c0b7;
-  font-family: Lora;
+  color: #03aab6;
+  font-family: "tenor sans";
   text-align: center;
   margin-bottom: 44px !important;
   font-size: 1.6em;
@@ -608,12 +596,9 @@ img#about_awesome {
 
 #about_info {
   font-size: 0.95em;
-  /* font-family: "Lora";
-  font-family: "Montserrat Regular"; */
-  /* font-family: 'Tenor Sans'; */
-  font-family: "Ernestine Pro Light";
+  font-family: lora;
   line-height: 1.6em;
-  color: #363d3c;
+  color: #636363;
   /* width: 1000px; */
   margin-top: 120px;
   display: inline-block;
@@ -622,6 +607,7 @@ img#about_awesome {
 
 .first_p_about_info {
   font-family: Quentin;
+  color: black;
   font-size: 2.7em;
   padding-bottom: 22px;
   margin-top: -12px;
@@ -683,34 +669,26 @@ p.wider_p_about_info {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e9e0b8;
-  background-color: white;
   height: 340px;
-  /* margin-top: 140px; */
   padding-top: 160px;
   width: 100%;
 }
 
-#the_one > h2 {
+#the_one h2 {
   height: 40px;
   width: 600px;
   text-align: center;
   font-size: 1.7em;
   font-family: Lora;
-  color: #363d3c;
+  color: #636363;
   letter-spacing: 1px;
-  padding-bottom: 6px;
 }
 
-#the_one > p {
+#the_one h3 {
   font-family: Quentin;
+  color: #03aab6;
   font-size: 3em;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-img#lets_do_this {
-  width: 280px;
+  margin: 26px 0;
 }
 
 #about_me_contact {
@@ -723,43 +701,28 @@ img#lets_do_this {
 .button_about_claire {
   text-decoration: none;
   cursor: pointer;
-  padding: 8px 30px !important;
+  padding: 8px 28px !important;
   text-align: center;
-  background: #d2b962 !important;
+  background: #fbf9ee;
   color: white !important;
-  border: 2px double #d2b962;
+  color: black !important;
+  border: 3px solid #d2b96e;
   transition: 0.3s !important;
-  margin: 20px auto !important;
-  font-family: "Ernestine Pro Light";
-  font-size: 1.2em;
+  margin: 10px auto !important;
+  font-family: "tenor sans";
+  font-size: 0.9em;
 }
 
 .button_about_claire:hover {
-  /* border: 2px solid rgb(210, 198, 98); */
-  /* background-color: white !important; */
-  /* color: black !important; */
-  color: #16c0b7 !important;
-  /* color: white !important; */
-  /* background: white ! important; */
-  background: white !important;
-  /* background: #16c0b7 !important; */
-  /* #16c0b7! */
-  border: 2px solid #d2b962;
-  /* border: 2px solid #16c0b7; */
+  color: white !important;
+  background: #636363 !important;
+  border: 3px solid #D2B96E;
 }
 
 .button_about_claire a {
   text-decoration: none !important;
 }
 
-/* #about_me_contact input[type=button]:hover {
-  /* background: rgba(8, 146, 165, 0.3) !important; */
-/* background: white !important; */
-/* color: #066B79 !important; */
-/* color: #0892A5 ! important;
-  color: #50c9ba;
-  border: 2px solid #50c9ba; 
-} */
 #base_container_fun_facts {
   display: flex;
   position: relative;
@@ -783,9 +746,7 @@ hr.about_me_above_fun_facts {
   align-items: center;
   height: 360px;
   width: 1000px;
-  background-color: #e9e0b8;
-  background-color: rgba(233, 224, 184, 0.4);
-  /* margin: 70px auto 100px; */
+  background-color: #fbf9ee;
 }
 
 img#frida {
@@ -804,7 +765,6 @@ img#frida {
   align-content: center;
   right: 35px;
   background: rgba(255, 255, 255, 0.8);
-  /* background: transparent; */
   width: 50%;
   height: 300px;
 }
@@ -813,7 +773,7 @@ img#frida {
   font-family: Lora;
   font-size: 0.8em;
   z-index: 99;
-  color: #d2b962;
+  color: #d2b96e;
   letter-spacing: 1px;
   position: absolute;
   width: 100%;
@@ -828,18 +788,18 @@ img#frida {
   text-align: center;
 }
 
-.mySlides > p {
+.mySlides p {
   /* margin: auto; */
   text-align: center;
   display: inline-block;
   vertical-align: middle;
   width: 375px !important;
   margin-top: auto;
-  font-family: "Ernestine Pro Light";
+  font-family: Lora;
   font-size: 0.85em;
   font-style: italic;
   line-height: 1.5;
-  color: #606060;
+  color: #636363;
 }
 
 .mySlides a:hover:before {
@@ -970,11 +930,9 @@ form#contact_us {
   margin-bottom: 90px;
 }
 
-#email_me > p {
+#email_me p {
   flex: 1;
-  /* font-family: Lora; */
-  /* font-family: 'Tenor Sans'; */
-  font-family: "Ernestine Pro Light";
+  font-family: Lora;
   letter-spacing: 1px;
   text-align: center;
   font-size: 0.8em;
@@ -997,7 +955,6 @@ textarea {
 
 .group,
 .custom-select {
-  /* display: inline-block; */
   float: right;
   margin-right: 10px;
   margin-left: 10px;
@@ -1008,7 +965,7 @@ textarea {
   /* font-family: Lora; */
   /* font-family: Raleway; */
   /* font-family: 'Tenor Sans'; */
-  font-family: "Ernestine Pro Light";
+  font-family: Lora;
   letter-spacing: 1px;
 }
 
@@ -1064,16 +1021,7 @@ textarea {
 }
 
 .other {
-  color: #363d3c;
-}
-
-.contact_img {
-  display: flex;
-  align-items: flex-start;
-  width: 50%;
-  margin: auto;
-  justify-content: flex-start;
-  align-items: center;
+  color: #636363;
 }
 
 /* SUBMIT BUTTON ON CONTACT PAGE */
@@ -1101,7 +1049,7 @@ div#submit_contact {
 
 #submit_contact input[type=button]:hover {
   background: white !important;
-  color: rgba(69, 69, 69, 0.7) !important;
+  color: #636363 !important;
   font-size: 3em;
 }
 
@@ -1133,9 +1081,6 @@ div#submit_contact {
   height: 148px;
   justify-content: center;
   align-items: center;
-  /* background-color: #E3D888;  */
-  /* background-color: #D8C99B;  */
-  background-color: #EADFBD;
   background-color: #fbf9ee;
 }
 
@@ -1144,7 +1089,6 @@ div#submit_contact {
   height: 50px;
   width: 1200px;
   margin-top: 33px;
-  /* margin-bottom: 14px; */
   text-align: center;
   font-size: 24px;
   font-family: Lora;
@@ -1185,7 +1129,6 @@ div#submit_contact {
   height: 148px;
   justify-content: center;
   align-items: center;
-  background-color: #EADFBD;
   background-color: #fbf9ee;
 }
 
@@ -1209,7 +1152,6 @@ img#gold_star {
 #white_box h2 {
   flex: 1;
   color: #03aab6;
-  /* color: #0892A5; */
   font-family: Lora;
   text-align: center;
   margin-top: 20px;
