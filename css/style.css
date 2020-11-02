@@ -713,7 +713,7 @@ p.wider_p_about_info {
 .button_about_claire:hover {
   color: white !important;
   background: #636363 !important;
-  border: 3px solid #D2B96E;
+  border: 3px solid #d2b96e;
 }
 
 .button_about_claire a {
@@ -999,7 +999,7 @@ textarea {
 }
 
 ::placeholder {
-  color: #AC985B;
+  color: #ac985b;
 }
 
 .custom-select {
@@ -1014,7 +1014,7 @@ textarea {
   padding-bottom: 8px;
   padding-right: 2px;
   padding-left: 2px;
-  color: #AC985B;
+  color: #ac985b;
 }
 
 .other {
@@ -1217,28 +1217,64 @@ img#gold_star {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 50 50;
-  background-color: #2196F3;
+  grid-template-columns: 50% 50%;
   padding: 10px;
-  height: 80vh;
-  width: 80%;
-  margin: 0 auto;
+  height: 90vh;
+  width: 70%;
+  margin: 100px auto;
 }
 
 .grid-item-1 {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+  padding: 20px 70px;
+  font-size: 14px;
+  text-align: left;
 }
 
 .grid-item-2 {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+  padding: 20px 70px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.grid-container ul {
+  margin-bottom: 20px;
+  list-style: none;
+  padding-left: 16px;
+}
+
+.grid-container ul li {
+  list-style-type: disc !important;
+}
+
+.grid-container h2 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-family: "tenor sans";
+  color: #333333;
+}
+
+.grid-container h3 {
+  font-family: "tenor sans";
+  font-size: 1.2em;
+  padding-top: 2em;
+}
+
+.grid-container p {
+  line-height: 1.7em;
+  font-size: 1.2em;
+  color: #666666;
+  font-family: lora;
+}
+
+p.price {
+  font-family: "tenor sans";
+}
+
+.service-main hr {
+  width: 70%;
+  border-top: 2px solid #d2b96e;
+  margin-top: -90px;
+  margin-bottom: 100px;
 }
 
 /* Styling Blog Page */
