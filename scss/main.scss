@@ -1277,25 +1277,29 @@ div#submit_contact {
   padding-top: 200px;
   // padding-left: 150px;
   // padding-right: 150px;
-  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .port_row {
   // margin: 8px -16px;
   margin: 0 auto;
   width: 80%;
+  
 }
 
 /* Add padding BETWEEN each column */
 .port_row,
 .port_row > .column {
-  padding: 10px;
+  padding: 18px;
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 30%;
+  margin-left: 10px;
 }
 
 /* Clear floats after rows */ 
@@ -1307,11 +1311,18 @@ div#submit_contact {
 
 /* Content */
 .content {
-  background-color: white;
+  background-color:#fbf9ee;
   padding: 10px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width : 1724px) {
+  .column {
+    width: 27%;
+  }
+
+}
 @media screen and (max-width: 900px) {
   .column {
     width: 40%;  }

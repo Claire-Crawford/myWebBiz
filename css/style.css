@@ -1114,7 +1114,9 @@ div#submit_contact {
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
-  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .port_row {
@@ -1125,13 +1127,14 @@ div#submit_contact {
 /* Add padding BETWEEN each column */
 .port_row,
 .port_row > .column {
-  padding: 10px;
+  padding: 18px;
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 30%;
+  margin-left: 10px;
 }
 
 /* Clear floats after rows */
@@ -1143,11 +1146,16 @@ div#submit_contact {
 
 /* Content */
 .content {
-  background-color: white;
+  background-color: #fbf9ee;
   padding: 10px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1724px) {
+  .column {
+    width: 27%;
+  }
+}
 @media screen and (max-width: 900px) {
   .column {
     width: 40%;
