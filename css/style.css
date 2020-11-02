@@ -1,13 +1,10 @@
+@import "../vendor/MyFontsWebfontsKit/MyFontsWebfontsKit.css";
+@import "../vendor/hellopretty_elements/stylesheet.css";
+@import "../vendor/hellopretty_regular_macroman/stylesheet.css";
 /* ==============================
    SETTING DEFAULT ELEMENT STYLES
    ==============================
 */
-@font-face {
-  font-family: "Saturday Script";
-  src: url("myfont.woff2") format("woff2"), url("myfont.woff") format("woff");
-}
-/* #AC944B color I'm trying out as moodboard border*/
-/* #17779C color I'm using on blue font */
 aside,
 body,
 div,
@@ -234,7 +231,7 @@ body::after {
 }
 
 .moodboard_h2 {
-  font-family: Quentin;
+  font-family: "Quentin";
   color: #363d3c;
   font-size: 3.4em;
   font-style: bold;
