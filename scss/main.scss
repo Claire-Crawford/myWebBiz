@@ -1271,15 +1271,17 @@ div#submit_contact {
 .port_main {
   max-width: 100%;
   width: 100%;
-  // margin: auto;
   text-align: center;
   padding-bottom: 200px;
-  padding-top: 200px;
-  // padding-left: 150px;
-  // padding-right: 150px;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.content a {
+  color: #636363;
+  font-family: 'tenor sans';
 }
 
 .port_row {
@@ -1317,7 +1319,7 @@ div#submit_contact {
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 
-@media screen and (max-width : 1724px) {
+@media screen and (max-width : 1720px) {
   .column {
     width: 27%;
   }
