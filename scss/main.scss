@@ -1256,12 +1256,6 @@ div#submit_contact {
   letter-spacing: 1px;
 }
 
-#portfolio_stuff_here {
-  height: 800px;
-  width: 100%;
-  background-color: white;
-}
-
 #white_box h2 {
   flex: 1;
   color: #03aab6;
@@ -1271,6 +1265,57 @@ div#submit_contact {
   margin-bottom: 40px;
   font-size: 1.5em;
 
+}
+
+.port_main {
+max-width: 100%;
+margin-top: 100px;
+text-align: center;
+}
+
+.port_row {
+ height: 900px;
+}
+
+/* Add padding BETWEEN each column */
+.port_row,
+.port_row > .column {
+  padding: 30px;
+
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* Clear floats after rows */
+.port_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color:#fbf9ee;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
 

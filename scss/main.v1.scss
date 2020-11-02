@@ -1,0 +1,19 @@
+// main.scss by Claire Crawford (hidden comment)
+/* css.style derived from main.scss by Claire Crawford */
+@charset "utf-8";
+
+@import "_base.scss";
+
+@import "layout/_header.scss";
+@import "layout/_aside.scss";
+@import "layout/_footer.scss";
+
+@import "module/_icons.scss";
+@import "module/_legal.scss";
+@import "module/_moreAboutMe.scss";
+@import "module/_goodFit.scss";
+
+@import "page/_portfolio.scss";
+@import "page/_home.scss";
+
+//@import "old.css";
