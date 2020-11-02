@@ -79,7 +79,7 @@ header {
         @include media-breakpoint-up(sm) {
           width: 180px;
           transition: 0.5s;
-          // transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 
         }
       }
