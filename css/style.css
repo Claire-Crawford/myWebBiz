@@ -1107,32 +1107,35 @@ div#submit_contact {
   font-size: 1.5em;
 }
 
+/* Center website */
 .port_main {
   max-width: 100%;
-  margin-top: 100px;
+  width: 100%;
   text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  background-color: lightgrey;
 }
 
 .port_row {
-  height: 900px;
+  margin: 0 auto;
+  width: 80%;
 }
 
 /* Add padding BETWEEN each column */
 .port_row,
 .port_row > .column {
-  padding: 30px;
+  padding: 10px;
 }
 
-/* Create four equal columns that floats next to each other */
+/* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 25%;
-  display: inline-block;
-  margin: 0 auto;
+  width: 30%;
 }
 
 /* Clear floats after rows */
-.port_row:after {
+.row:after {
   content: "";
   display: table;
   clear: both;
@@ -1140,14 +1143,14 @@ div#submit_contact {
 
 /* Content */
 .content {
-  background-color: #fbf9ee;
+  background-color: white;
   padding: 10px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .column {
-    width: 50%;
+    width: 40%;
   }
 }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
