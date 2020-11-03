@@ -934,10 +934,9 @@ img#frida {
   margin-top: 33px;
   text-align: center;
   font-size: 24px;
-  font-family: Lora;
+  font-family: 'tenor sans';
   z-index: 99;
   color: black;
-  letter-spacing: 1px;
 }
 
 img#contact_shine {
@@ -1020,8 +1019,6 @@ textarea {
 
 #contact_us label {
   display: block;
-  /* font-family: Lora; */
-  /* font-family: Raleway; */
   /* font-family: 'Tenor Sans'; */
   font-family: Lora;
   letter-spacing: 1px;
@@ -1096,21 +1093,22 @@ div#submit_contact {
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s !important;
-  font-family: Quentin;
+  font-family: "FloralTheory";
   // color: #16c0b7;
   color: #03aab6;
   letter-spacing: -0.009px;
   text-transform: none;
-  font-size: 2.6em;
-  padding: 10px 0 0 0;
+  font-size: 3.4em;
+  padding: 18px 0;
   margin: -10px 10px 0 0;
+  font-weight: normal;
   float: right;
 }
 
 #submit_contact input[type="button"]:hover {
   background: white !important;
   color: #636363 !important;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 /* input[type=submit] {
@@ -1458,7 +1456,7 @@ footer {
 }
 
 .row_footer li a:hover {
-  color: black;
+  color: #333333;
 }
 
 .row_footer h5 {
