@@ -1301,7 +1301,6 @@ p.price {
   height: 148px;
   justify-content: center;
   align-items: center;
-  background-color: #e9e0b8;
   background-color: #fbf9ee;
 }
 
@@ -1309,14 +1308,13 @@ p.price {
   flex: 1;
   height: 50px;
   width: 1200px;
-  color: black;
+  color: #333333;
   margin-top: 40px;
   margin-bottom: 14px;
   text-align: center;
   font-size: 24px;
-  font-family: Lora;
+  font-family: "tenor sans";
   z-index: 99;
-  letter-spacing: 1px;
 }
 
 .blog_h2 {
@@ -1329,6 +1327,7 @@ p.price {
 }
 
 .blog_container {
+  position: relative;
   width: 100%;
   margin: auto;
   justify-content: middle;
@@ -1337,7 +1336,44 @@ p.price {
 
 .blog_container img {
   width: 70%;
-  padding: 140px 40px 140px 40px;
+  padding: 120px 40px 0px 40px;
+}
+
+.recent {
+  margin-top: 100px;
+  text-align: left;
+  margin-left: 200px;
+  font-family: "FloralTheory";
+  color: #666666;
+  font-size: 3em;
+  position: absolute;
+}
+
+#read_blog {
+  height: 40px;
+  padding-bottom: 80px;
+}
+
+#read_blog a {
+  font-family: "FloralTheory";
+  color: #666666;
+  font-size: 3em;
+  float: right;
+  margin-right: 300px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+#read_blog a:link {
+  color: #666666;
+}
+
+#read_blog a:visited {
+  color: #666666;
+}
+
+#read_blog a:hover {
+  color: #03aab6;
 }
 
 /* STYLING FOOTER */
