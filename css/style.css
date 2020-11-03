@@ -231,15 +231,14 @@ body::after {
 }
 
 .moodboard_h2 {
-  font-family: "Quentin";
-  color: #363d3c;
-  font-size: 3.4em;
-  font-style: bold;
-  letter-spacing: 1px;
+  font-family: "FloralTheory";
+  font-weight: normal;
+  color: #333333;
+  font-size: 80px;
+  letter-spacing: 2px;
   position: absolute;
   text-align: center;
-  /* top: 310px; */
-  padding-top: 52px;
+  padding-top: 72px;
   animation-name: block2;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -272,8 +271,8 @@ body::after {
   border: 0.8px solid #d2b96e;
   background: #d2b96e;
   width: 880px;
-  margin-top: 104px;
-  margin-bottom: 0;
+  margin-top: 118px;
+  margin-bottom: 20px;
 }
 
 .crafting {
@@ -291,7 +290,7 @@ body::after {
   font-size: 1.6em;
   width: 930px;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: 0 !important;
 }
 
@@ -299,7 +298,7 @@ body::after {
   font-family: "Montserrat Light";
   color: #d2b96e;
   font-size: 0.9em;
-  margin-top: 8px;
+  margin-top: 5px;
   text-align: center;
   letter-spacing: 1px;
 }
@@ -387,18 +386,18 @@ div#one hr {
 }
 
 div#one #first_p {
-  font-size: 3.3em;
-  padding-bottom: 20px;
-  font-family: "Tenor Sans";
-  font-family: Quentin;
+  font-size: 3.8em;
+  padding-bottom: 40px;
+  font-family: "FloralTheory";
   color: #03aab6;
+  margin-top: -10px;
 }
 
 .intro_2 #second_p {
   font-family: "tenor sans";
   font-size: 1.5em;
   padding-bottom: 20px;
-  padding-top: 24px;
+  padding-top: 34px;
   color: #636363;
 }
 
@@ -420,7 +419,7 @@ div#three {
   flex: 1;
   width: 300px;
   margin-left: 10px;
-  margin-top: 16px;
+  margin-top: -10px;
 }
 
 div#three a {
@@ -448,11 +447,11 @@ div#two p {
 }
 
 #last_p {
-  margin-left: 12px;
+  margin-left: 25px;
   text-decoration: none;
-  color: black;
-  font-family: Quentin;
-  font-size: 2.2em;
+  color: #333333;
+  font-family: "FloralTheory";
+  font-size: 3.4em;
 }
 
 #last_p:hover {
@@ -475,23 +474,26 @@ div#two p {
 }
 
 .wrap_goodFit h2 {
-  font-family: Quentin;
-  font-size: 2.2em;
+  font-family: "FloralTheory";
+  color: #333333;
+  font-size: 2.8em;
+  font-weight: normal;
   text-align: center;
   margin-bottom: 100px;
-  margin-top: -60px;
+  margin-top: -54px;
 }
 
 .good_wrapper h3 {
   text-align: center;
-  font-size: 2.2em;
-  font-family: Quentin;
+  font-size: 4em;
+  margin-top: 30px;
+  font-family: "FloralTheory";
   color: #03aab6;
 }
 
 .good_fit_hide_me hr {
   color: black;
-  margin-top: -20px;
+  margin-top: -30px;
 }
 
 .good_fit_hide_me {
@@ -1388,8 +1390,10 @@ footer {
 .row_footer h2 {
   margin-top: 26px;
   padding-bottom: 18px;
-  font-size: 1.7em;
-  font-family: Quentin;
+  font-size: 2.4em;
+  font-family: "FloralTheory";
+  font-weight: normal;
+  color: #333333;
 }
 
 .column {
@@ -1398,13 +1402,6 @@ footer {
 
 .left {
   width: 64%;
-}
-
-.left hr {
-  border: 0.8px solid #d2b96e;
-  background: #d2b96e;
-  width: 690px;
-  margin: 0 0 14px 0;
 }
 
 .right {
@@ -1429,6 +1426,8 @@ footer {
   bottom: 0;
   left: 320px;
   font-family: "tenor sans";
+  font-size: 0.8em;
+  color: #636363;
 }
 
 /* More About Me underline effect */
