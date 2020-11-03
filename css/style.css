@@ -887,7 +887,7 @@ img#contact_shine {
 #white_box h2 {
   flex: 1;
   color: #03aab6;
-  font-family: Lora;
+  font-family: Monteserrat;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -1086,16 +1086,15 @@ div#submit_contact {
   margin-top: 33px;
   text-align: center;
   font-size: 24px;
-  font-family: Lora;
+  font-family: "tenor sans";
   z-index: 99;
   color: #666666;
-  letter-spacing: 1px;
 }
 
 #white_box h2 {
   flex: 1;
   color: #03aab6;
-  font-family: Lora;
+  font-family: Monteserrat !important;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -1207,10 +1206,9 @@ div#submit_contact {
   margin-top: 30px;
   text-align: center;
   font-size: 24px;
-  font-family: Lora;
+  font-family: "tenor sans";
   z-index: 99;
   color: #666666;
-  letter-spacing: 1px;
 }
 
 .you_text {
@@ -1225,7 +1223,16 @@ div#submit_contact {
 #white_box h2 {
   flex: 1;
   color: #03aab6;
-  font-family: Lora;
+  font-family: "Cormorant Infant" !important;
+  font-family: "Prata" !important;
+  font-family: "Garamond" !important;
+  font-family: "Cormorant" !important;
+  font-family: "Fahkwang" !important;
+  font-family: "lato" !important;
+  font-family: "Crimson Text" !important;
+  font-family: "Goudy Bookletter 1911" !important;
+  font-family: "Taviraj" !important;
+  font-weight: normal;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
