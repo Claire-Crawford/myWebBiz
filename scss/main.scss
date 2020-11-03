@@ -109,7 +109,7 @@ body::after {
 }
 
 .inner_main_menu ul li a {
-  color: #606060;
+  color: #666666;
   font-family: "tenor sans";
   font-size: 1em;
   letter-spacing: 1px;
@@ -117,6 +117,18 @@ body::after {
   text-decoration: none;
   display: block;
   margin: 5px 20px 5px 20px;
+}
+
+.inner_main_menu ul li a:link {
+  color: #666666;
+}
+
+.inner_main_menu ul li a:visited {
+  color: #666666;
+}
+
+.inner_main_menu ul li a:hover {
+  color: #333333;
 }
 
 #menu {
@@ -153,7 +165,7 @@ body::after {
 
 @media only screen and (min-width: 200px) and (max-width: 767px) {
   .slicknav_menu {
-    display: block;
+   display: block;
   }
 
   .inner_main_menu {
@@ -1326,6 +1338,7 @@ div#submit_contact {
   padding: 60px;
   font-size: 14px;
   text-align: left;
+  margin-top: 10px;
   
 }
 
@@ -1333,6 +1346,7 @@ div#submit_contact {
   padding: 60px;
   font-size: 14px;
   text-align: left;
+  margin-top: 18px;
 }
 
 .grid-container ul{
@@ -1425,6 +1439,7 @@ p.price  {
 .blog_h2 {
   flex: 1;
   color: #16c0b7;
+  color:#d2b96e !important;
   font-family: Lora;
   text-align: center;
   margin-bottom: 44px !important;
