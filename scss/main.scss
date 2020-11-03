@@ -1290,18 +1290,19 @@ img#gold_star {
   grid-template-columns: 50% 50%;
   padding-bottom: 60px;
   height: 90vh;
-  width: 70%;
+  width: 60%;
   margin: 50px auto;
   text-align: center;
 }
 .grid-item-1 {
-  padding: 20px 70px;
+  padding: 60px;
   font-size: 14px;
   text-align: left;
+  
 }
 
 .grid-item-2 {
-  padding: 20px 70px;
+  padding: 60px;
   font-size: 14px;
   text-align: left;
 }
@@ -1344,17 +1345,20 @@ p.price  {
 .service-main hr {
   width: 70%;
   border-top: 2px solid #d2b96e;
-  margin-top: -100px;
+  margin-top: -140px;
   
 }
 
-.service-end  {
+.service-end {
   font-family: 'tenor sans';
   text-align: center;
   padding-top: 40px;
   font-size: 1.3em;
   color: #333333;
   padding-bottom: 60px;
+ 
+
+  
 }
 
 // .service-end {
