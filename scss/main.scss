@@ -562,7 +562,6 @@ div#two p {
   line-height: 25px;
   position: absolute;
   top: 18%;
-  //  transform: translate(0, -50%);
   text-align: center;
 }
 
@@ -586,6 +585,8 @@ div#two p {
   opacity: 1;
   cursor: pointer;
 }
+
+
 
 /* ABOUT ME PAGE STYLING */
 
@@ -611,14 +612,13 @@ div#two p {
   flex: 1;
   height: 50px;
   width: 1200px;
-  color: black;
+  color: #333333;
   margin-top: 40px;
   margin-bottom: 14px;
   text-align: center;
   font-size: 24px;
-  font-family: Lora;
+  font-family: 'tenor sans';
   z-index: 99;
-  letter-spacing: 1px;
 }
 
 img#about_awesome {
@@ -650,16 +650,15 @@ img#about_awesome {
   font-family: lora;
   line-height: 1.6em;
   color: #636363;
-  /* width: 1000px; */
   margin-top: 120px;
   display: inline-block;
   z-index: 1;
 }
 
 .first_p_about_info {
-  font-family: Quentin;
-  color: black;
-  font-size: 2.7em;
+  font-family: "FloralTheory";
+  color: #333333;
+  font-size: 2.6em;
   padding-bottom: 22px;
   margin-top: -12px;
   text-align: left;
@@ -703,14 +702,14 @@ p.wider_p_about_info {
 
 .claire_sig {
   float: right;
-  font-family: Quentin;
-  font-size: 2.5em;
+  font-family: "FloralTheory";
+  font-size: 3.5em;
   margin-right: -140px;
   margin-top: 22px;
 }
 
 #sig_line {
-  margin-top: 8px;
+  margin-top: 12px;
   width: 150px;
   margin-left: 15px;
 }
@@ -721,7 +720,7 @@ p.wider_p_about_info {
   justify-content: center;
   align-items: center;
   height: 340px;
-  padding-top: 160px;
+  padding-top: 80px;
   width: 100%;
 }
 
@@ -730,16 +729,17 @@ p.wider_p_about_info {
   width: 600px;
   text-align: center;
   font-size: 1.7em;
-  font-family: Lora;
+  font-family: 'tenor sans';
   color: #636363;
-  letter-spacing: 1px;
+  font-weight: normal;
 }
 
 #the_one h3 {
-  font-family: Quentin;
+  font-family: 'FloralTheory';
   color: #03aab6;
-  font-size: 3em;
+  font-size: 3.5em;
   margin: 26px 0;
+  font-weight: normal;
 }
 
 #about_me_contact {
@@ -826,7 +826,7 @@ img#frida {
 }
 
 #fun_facts h3 {
-  font-family: Lora;
+  font-family: 'tenor sans';
   font-size: 0.8em;
   z-index: 99;
   color: #d2b96e;
@@ -936,7 +936,7 @@ img#frida {
   font-size: 24px;
   font-family: 'tenor sans';
   z-index: 99;
-  color: black;
+  color: #333333;
 }
 
 img#contact_shine {
@@ -1355,14 +1355,8 @@ p.price  {
   font-size: 1.3em;
   color: #333333;
   padding-bottom: 60px;
- 
-
-  
+   
 }
-
-// .service-end {
-//   text-align: center;
-// }
 
 
 
@@ -1461,7 +1455,6 @@ footer {
 
 .row_footer h5 {
   font-family: "tenor sans";
-  // color: #16c0b7;
   color: #03aab6;
   font-size: 0.9em;
   margin-bottom: 10px;
@@ -1484,13 +1477,6 @@ footer {
 .left {
   width: 64%;
 }
-
-// .left hr {
-//   border: 0.8px solid #d2b96e;
-//   background: #d2b96e;
-//   width: 690px;
-//   margin: 0 0 14px 0;
-// }
 
 .right {
   width: 10%;
