@@ -245,7 +245,7 @@ body::after {
 .moodboard_h2 {
   font-family: "FloralTheory";
   font-weight: normal;
-  color: #333333;
+  color: #363636;
   font-size: 80px;
   letter-spacing: 2px;
   position: absolute;
@@ -1278,17 +1278,22 @@ div#submit_contact {
   flex: 1;
   height: 50px;
   width: 1200px;
-  margin-top: 18px;
+  margin-top: 30px;
   text-align: center;
   font-size: 24px;
   font-family: Lora;
   z-index: 99;
-  color: black;
+  color: #666666;
   letter-spacing: 1px;
 }
 
-img#gold_star {
-  margin-bottom: -10px;
+.you_text {
+  padding-top: 10px;
+  display: inline-block;
+}
+
+#gold_star {
+  margin-bottom: -4px;
 }
 
 #white_box h2 {
@@ -1370,7 +1375,7 @@ p.price  {
   text-align: center;
   padding-top: 40px;
   font-size: 1.3em;
-  color: #333333;
+  color: #666666;
   padding-bottom: 60px;
    
 }
