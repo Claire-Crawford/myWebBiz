@@ -612,7 +612,7 @@ div#two p {
   flex: 1;
   height: 50px;
   width: 1200px;
-  color: #333333;
+  color: #666666;
   margin-top: 40px;
   margin-bottom: 14px;
   text-align: center;
@@ -677,7 +677,6 @@ p.wider_p_about_info {
 }
 
 .second_to_last_p_about_info {
-  /* width: 899px; */
   text-align: justify;
   margin-bottom: 15px;
 }
@@ -703,6 +702,7 @@ p.wider_p_about_info {
 .claire_sig {
   float: right;
   font-family: "FloralTheory";
+  color: #666666;
   font-size: 3.5em;
   margin-right: -140px;
   margin-top: 22px;
@@ -936,7 +936,7 @@ img#frida {
   font-size: 24px;
   font-family: 'tenor sans';
   z-index: 99;
-  color: #333333;
+  color: #666666;
 }
 
 img#contact_shine {
@@ -993,7 +993,7 @@ form#contact_us {
   letter-spacing: 1px;
   text-align: center;
   font-size: 0.8em;
-  color: rgb(96, 96, 96);
+  color: #666666;
 }
 
 input[type="text"],
@@ -1125,13 +1125,15 @@ div#submit_contact {
   background-color: rgb(88, 183, 229);
 } */
 
+
+
+
 /* Styling Portfolio Page */
 
 #portfolio_collage {
   margin-top: 220px;
   max-width: 100%;
   width: 100%;
-  /* height:auto; */
 }
 
 #portfolio_space_below_banner {
@@ -1154,7 +1156,7 @@ div#submit_contact {
   font-size: 24px;
   font-family: Lora;
   z-index: 99;
-  color: black;
+  color: #666666;
   letter-spacing: 1px;
 }
 
@@ -1172,12 +1174,15 @@ div#submit_contact {
 .port_main {
   max-width: 100%;
   width: 100%;
-  text-align: center;
   padding-bottom: 200px;
-  padding-top: 100px;
+  padding-top: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.content {
+  text-align: center;
 }
 
 .content a {
@@ -1189,7 +1194,19 @@ div#submit_contact {
   // margin: 8px -16px;
   margin: 0 auto;
   width: 80%;
+  text-align: left;
 }
+
+.port_row h2 {
+  margin-left: -20px;
+  margin-top: -40px;
+  padding-bottom: 20px;
+  font-family: "FloralTheory";
+  font-weight: normal;
+  color: #666666;
+  font-size: 3em;
+}
+
 
 /* Add padding BETWEEN each column */
 .port_row,
@@ -1384,7 +1401,7 @@ p.price  {
   flex: 1;
   height: 50px;
   width: 1200px;
-  color: #333333;
+  color: #666666;
   margin-top: 40px;
   margin-bottom: 14px;
   text-align: center;
@@ -1425,6 +1442,7 @@ p.price  {
   color: #666666;
   font-size: 3em;
   position: absolute;
+  font-weight: normal;
 }
 
 
