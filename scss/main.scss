@@ -238,10 +238,6 @@ body::after {
   text-align: center;
 }
 
-.and {
-  /* font-family: "Playfair Display"; */
-  font-size: 1.2em;
-}
 
 .first_div_below_moodboard {
   position: relative;
@@ -592,20 +588,10 @@ div#two p {
   width: 50%;
 }
 
-// .finalP_goodFit p {
-//   font-family: 'tenor sans';
-//   font-size: 1em;
-//   padding-bottom: 30px;
-//   text-transform: uppercase;
-//   color: #666666;
-//   line-height: 2em;
-
-// }
-
 .inside_finalP_1 p {
   font-family: 'tenor sans';
   font-family: 'Cormorant Infant';
-  font-size: 1.4em;
+  font-size: 1.6em;
   padding-bottom: 30px;
   // text-transform: uppercase;
   color: #666666;
@@ -620,6 +606,7 @@ div#two p {
 
 .inside_finalP_2 h3 {
   font-family: 'FloralTheory' !important;
+  color: #333333 !important;
   text-transform: none;
   font-weight:  normal;
   font-size: 2.7em;
@@ -635,7 +622,8 @@ div#two p {
   padding: 6px 46px !important;
   text-align: center;
   background: #fbf9ee;
-  color: black !important;
+  // color: #333333 !important;
+  color: #03aab6 !important;
   border: 3px solid #d2b96e;
   transition: 0.3s !important;
   font-family: "tenor sans";
@@ -643,8 +631,11 @@ div#two p {
 }
 
 .button_dreamMotion:hover {
-  color: #03aab6 !important;
-  background: white !important;
+  // color: #03aab6 !important;
+  // background: white !important;
+  // border: 3px solid #d2b96e;
+  background: #666666!important;
+  color: white !important;
   border: 3px solid #d2b96e;
 }
 
@@ -663,7 +654,7 @@ div#two p {
 .singleStar {
   width: 2vw;
   position: absolute;
-  right: 33%;
+  right: 31%;
   margin-top: -98px;
   opacity: 0.8;
 }
@@ -671,7 +662,7 @@ div#two p {
 .threeStars {
   width: 7vw;
   position: absolute;
-  left: 29%;
+  left: 27%;
   margin-top: -60px;
   opacity: 0.7;
 }
@@ -1568,11 +1559,14 @@ p.price {
   color: #03aab6;
 }
 
+
+
+
+
 /* STYLING FOOTER */
 
 footer {
   box-sizing: border-box;
-
   background: url(../images/torn_edge_bkgrd_2080x1300.jpg);
 }
 
@@ -1586,7 +1580,7 @@ footer {
 }
 
 .row_footer {
-  width: 80%;
+  width: 90%;
   margin-top: 60px;
   font-family: "Cormorant Infant";
   color: #606060;
@@ -1596,9 +1590,13 @@ footer {
 .row_footer h2 {
   margin-top: 56px;
   padding-bottom: 18px;
-  font-size: 2.4em;
+  // font-size: 2.4em;
+  font-size: 1.1em;
+  letter-spacing: 1px;
   font-family: "FloralTheory";
+  font-family: "tenor sans";
   font-weight: normal;
+  text-transform: uppercase;
   color: #333333;
 }
 
@@ -1606,8 +1604,9 @@ footer {
   font-family: "tenor sans";
   color: #03aab6;
   font-size: 0.9em;
-  margin-bottom: 10px;
   text-align: center;
+  margin-bottom: 0px;
+  margin-top: 64px;
 }
 
 .row_footer li {
@@ -1628,43 +1627,64 @@ footer {
 }
 
 .left {
-  width: 64%;
+  width: 60%;
 }
 
 .column p {
-  font-family: "tenor sans";
-  font-size: 1em;
-  text-transform: uppercase;
+  font-family: "Cormorant Infant";
+  font-size: 1.4em;
 }
 
 .right {
-  width: 10%;
+  width: 30%;
+  text-align: right;
 }
 
 .middle {
-  width: 10%;
+  width: 20%;
+  position: absolute;
+  left: 40%;
+  margin-top: 90px;
+  text-align: center;
 }
+
+.logo_footer {
+  width: 80%;
+}
+
 
 .footerLinks li + li {
   border-left: 2px solid #d1cfcf;
   padding: 0 6px 0 6px;
 }
 
-.footerLinks li p {
+.footerLinks li a {
   padding-right: 6px;
   color: #acabab;
 }
 
+
 .footerLinks li a {
   color: #acabab;
+  font-family: "Cormorant Infant";
 }
 
+
+.ul_col1 p {
+  position: absolute;
+  right: 230px;
+  bottom: 140px;
+  font-size: 3em;
+  font-family: "FloralTheory";
+}
+
+
 /* Clear floats after the columns */
-// .row:after {
-//   content: "";
-//   display: table;
-//   clear: both;
-// }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .basefooter {
   margin: 0 auto;
@@ -1676,7 +1696,7 @@ footer {
   text-align: center;
   position: absolute;
   bottom: 7px;
-  left: 25%;
+  left: 35%;
   font-family: "tenor sans";
   color: #666666;
   font-size: 0.8em;
