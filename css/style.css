@@ -1565,12 +1565,29 @@ footer {
   text-align: right;
 }
 
+.right p {
+  font-size: 4em;
+  font-family: "FloralTheory";
+  margin-top: 80px;
+  margin-right: 40px;
+}
+
 .middle {
   width: 20%;
   position: absolute;
   left: 40%;
   margin-top: 90px;
   text-align: center;
+}
+
+.ul_col1 li {
+  display: inline;
+}
+
+.ul_col1 li a {
+  font-family: "Cormorant Infant";
+  font-size: 1.2em;
+  padding: 0 12px;
 }
 
 .logo_footer {
@@ -1592,14 +1609,6 @@ footer {
   font-family: "Cormorant Infant";
 }
 
-.ul_col1 p {
-  position: absolute;
-  right: 230px;
-  bottom: 140px;
-  font-size: 3em;
-  font-family: "FloralTheory";
-}
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -1619,7 +1628,7 @@ footer {
   bottom: 7px;
   left: 35%;
   font-family: "tenor sans";
-  color: #666666;
+  color: #acaaaa !important;
   font-size: 0.8em;
 }
 
@@ -1633,8 +1642,11 @@ footer {
   float: left;
 }
 
+.footerLinks p {
+  padding-right: 10px;
+}
+
 .footerLinks a {
-  color: #d9d9d9;
   text-decoration: none;
   font-size: 13px;
 }

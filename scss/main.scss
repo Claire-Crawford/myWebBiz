@@ -1640,6 +1640,16 @@ footer {
   text-align: right;
 }
 
+.right p {
+  font-size: 4em;
+  font-family: "FloralTheory";
+  margin-top: 80px;
+  margin-right: 40px;
+
+}
+
+
+
 .middle {
   width: 20%;
   position: absolute;
@@ -1648,14 +1658,27 @@ footer {
   text-align: center;
 }
 
+.ul_col1 li {
+  display: inline;
+}
+
+.ul_col1 li a {
+  font-family: "Cormorant Infant";
+  font-size: 1.2em;
+  padding: 0 12px;
+}
+
 .logo_footer {
   width: 80%;
 }
 
 
+// Styling Bottom of Footer 
+
 .footerLinks li + li {
   border-left: 2px solid #d1cfcf;
   padding: 0 6px 0 6px;
+  
 }
 
 .footerLinks li a {
@@ -1667,15 +1690,6 @@ footer {
 .footerLinks li a {
   color: #acabab;
   font-family: "Cormorant Infant";
-}
-
-
-.ul_col1 p {
-  position: absolute;
-  right: 230px;
-  bottom: 140px;
-  font-size: 3em;
-  font-family: "FloralTheory";
 }
 
 
@@ -1698,24 +1712,31 @@ footer {
   bottom: 7px;
   left: 35%;
   font-family: "tenor sans";
-  color: #666666;
+  color: #acaaaa !important;
   font-size: 0.8em;
 }
 
 .footerLinks ul {
   padding: 0;
   list-style-type: none;
-  //  margin: 0;
 }
+
 .footerLinks li {
   display: inline;
   float: left;
 }
+
+.footerLinks p {
+padding-right: 10px;
+}
+
 .footerLinks a {
-  color: #d9d9d9;
   text-decoration: none;
   font-size: 13px;
 }
+
+
+
 
 /* More About Me underline effect */
 
