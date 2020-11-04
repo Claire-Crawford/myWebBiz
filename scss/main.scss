@@ -1297,6 +1297,10 @@ div#submit_contact {
   font-size: 3em;
 }
 
+// .content h3 {
+//   font-size: 1.2vw;
+// }
+
 /* Add padding BETWEEN each column */
 .port_row,
 .port_row > .column {
@@ -1328,18 +1332,31 @@ div#submit_contact {
 @media screen and (max-width: 1720px) {
   .column {
     width: 27%;
+    h3 {
+      font-size: 1.2vw;
+    }
   }
 }
+
 @media screen and (max-width: 900px) {
   .column {
     width: 40%;
+    h3 {
+      font-size: 1.8vw;
+    }
   }
+   
+
+  
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+    h3 {
+      font-size: 3.6vw;
+    }
   }
 }
 
