@@ -1582,18 +1582,17 @@ footer {
 .row_footer {
   width: 90%;
   margin-top: 60px;
-  font-family: "Cormorant Infant";
+  font-family: "CormorantInfant";
   color: #606060;
   line-height: 1.8em;
+  text-align: left;
 }
 
 .row_footer h2 {
   margin-top: 56px;
   padding-bottom: 18px;
-  // font-size: 2.4em;
-  font-size: 1.1em;
+  font-size: 1.2em;
   letter-spacing: 1px;
-  font-family: "FloralTheory";
   font-family: "tenor sans";
   font-weight: normal;
   text-transform: uppercase;
@@ -1641,7 +1640,7 @@ footer {
 }
 
 .right p {
-  font-size: 4em;
+  font-size: 3.4em;
   font-family: "FloralTheory";
   margin-top: 80px;
   margin-right: 40px;
@@ -1668,6 +1667,14 @@ footer {
   padding: 0 12px;
 }
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 .logo_footer {
   width: 80%;
 }
@@ -1681,24 +1688,16 @@ footer {
   
 }
 
+
+
 .footerLinks li a {
+  font-family: "Cormorant Infant";
+  text-decoration: none;
+  font-size: 13px;
   padding-right: 6px;
   color: #acabab;
 }
 
-
-.footerLinks li a {
-  color: #acabab;
-  font-family: "Cormorant Infant";
-}
-
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .basefooter {
   margin: 0 auto;
@@ -1712,7 +1711,7 @@ footer {
   bottom: 7px;
   left: 35%;
   font-family: "tenor sans";
-  color: #acaaaa !important;
+  color: #8d8c8c !important;
   font-size: 0.8em;
 }
 
@@ -1728,11 +1727,6 @@ footer {
 
 .footerLinks p {
 padding-right: 10px;
-}
-
-.footerLinks a {
-  text-decoration: none;
-  font-size: 13px;
 }
 
 
