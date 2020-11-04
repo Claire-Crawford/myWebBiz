@@ -1,6 +1,19 @@
 @import "../vendor/MyFontsWebfontsKit/MyFontsWebfontsKit.css";
 @import "../vendor/hellopretty_elements/stylesheet.css";
 @import "../vendor/hellopretty_regular_macroman/stylesheet.css";
+/* Theme Fonts */
+@import "../vendor/MyFontsWebfontsKit/MyFontsWebfontsKit.css";
+@import "../vendor/hellopretty_elements/stylesheet.css";
+@import "../vendor/hellopretty_regular_macroman/stylesheet.css";
+@font-face {
+  font-family: "FloralTheory";
+  src: url("/assets/fonts/FloralTheory.otf") format("otf"), url("/assets/fonts/FloralTheoryRegular.ttf") format("ttf"), url("/assets/fonts/FloralTheoryRegular.woff") format("woff");
+}
+@font-face {
+  font-family: "FloralTheorySwashes";
+  src: url("/assets/fonts/FloralTheorySwashes.otf") format("otf");
+}
+/* Bootstrap Overrides */
 /* ==============================
    SETTING DEFAULT ELEMENT STYLES
    ==============================
