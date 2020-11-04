@@ -305,9 +305,9 @@ body::after {
   margin-bottom: 0 !important;
 }
 
-#just_below_moodboard h3 {
+.craft_code_under_moodboard h3 {
   font-family: "Cormorant Infant" !important;
-  color: #d2b96e;
+  color: #03aab6 !important;
   font-size: 0.9em;
   margin-top: 5px;
   text-align: center;
@@ -548,11 +548,16 @@ div#two p {
 
 .inside_finalP_1 p {
   font-family: "tenor sans";
-  font-size: 1.2em;
+  font-family: "Cormorant Infant";
+  font-size: 1.4em;
   padding-bottom: 30px;
-  text-transform: uppercase;
   color: #666666;
   line-height: 1.5em;
+  text-align: center;
+}
+
+.inside_finalP_2 {
+  padding-bottom: 50px;
 }
 
 .inside_finalP_2 h3 {
@@ -561,32 +566,54 @@ div#two p {
   font-weight: normal;
   font-size: 2.7em;
   padding-top: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 30px;
 }
 
 .button_dreamMotion {
   text-decoration: none;
   cursor: pointer;
-  padding: 14px 48px !important;
+  padding: 6px 46px !important;
   text-align: center;
   background: #fbf9ee;
-  color: white !important;
   color: black !important;
   border: 3px solid #d2b96e;
   transition: 0.3s !important;
-  margin: 10px auto !important;
   font-family: "tenor sans";
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .button_dreamMotion:hover {
-  color: white !important;
-  background: #636363 !important;
+  color: #03aab6 !important;
+  background: white !important;
   border: 3px solid #d2b96e;
 }
 
 .button_dreamMotion a {
   text-decoration: none !important;
+}
+
+.dreamMotion {
+  padding: 20px 0;
+}
+
+.good_fit_contact {
+  padding-bottom: 50px;
+}
+
+.singleStar {
+  width: 2vw;
+  position: absolute;
+  right: 33%;
+  margin-top: -98px;
+  opacity: 0.8;
+}
+
+.threeStars {
+  width: 7vw;
+  position: absolute;
+  left: 29%;
+  margin-top: -60px;
+  opacity: 0.7;
 }
 
 /* Back to top bird styling */
@@ -666,10 +693,10 @@ img#about_awesome {
 }
 
 #about_info {
-  font-size: 0.95em;
-  font-family: lora;
+  font-size: 1em;
+  font-family: "Cormorant Infant";
   line-height: 1.6em;
-  color: #636363;
+  color: #666666;
   margin-top: 120px;
   display: inline-block;
   z-index: 1;
@@ -749,7 +776,7 @@ p.wider_p_about_info {
   width: 600px;
   text-align: center;
   font-size: 1.7em;
-  font-family: "tenor sans";
+  font-family: "Cormorant Infant";
   color: #636363;
   font-weight: normal;
 }
