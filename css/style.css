@@ -1666,6 +1666,11 @@ footer {
   padding-right: 10px;
 }
 
+.right img {
+  width: 40px !important;
+  filter: invert(40%) sepia(0%) saturate(0%) hue-rotate(85deg) brightness(94%) contrast(89%);
+}
+
 /* More About Me underline effect */
 *,
 *::before,
