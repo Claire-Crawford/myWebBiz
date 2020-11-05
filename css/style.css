@@ -1539,9 +1539,9 @@ footer {
 }
 
 .row_footer h2 {
-  margin-top: 56px;
+  margin-top: 54px;
   padding-bottom: 18px;
-  font-size: 1.2em;
+  font-size: 0.9em;
   letter-spacing: 1px;
   font-family: "tenor sans";
   font-weight: normal;
@@ -1571,22 +1571,28 @@ footer {
   color: #333333;
 }
 
-.column {
-  float: left;
+.left {
+  width: 30%;
+  margin-left: 60px;
 }
 
-.left {
-  width: 60%;
+.middle {
+  width: 20%;
+  position: absolute;
+  left: 40%;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.right {
+  width: 20%;
+  float: right;
+  margin-right: 20px;
 }
 
 .column p {
   font-family: "Cormorant Infant";
   font-size: 1.4em;
-}
-
-.right {
-  width: 30%;
-  text-align: right;
 }
 
 .right p {
@@ -1596,12 +1602,13 @@ footer {
   margin-right: 40px;
 }
 
-.middle {
-  width: 20%;
-  position: absolute;
-  left: 40%;
-  margin-top: 90px;
+.logo_container {
   text-align: center;
+}
+
+.ul_col1 {
+  text-align: center;
+  width: 100%;
 }
 
 .ul_col1 li {
@@ -1623,6 +1630,17 @@ footer {
 
 .logo_footer {
   width: 80%;
+}
+
+.right img {
+  width: 2vw !important;
+  filter: invert(40%) sepia(0%) saturate(0%) hue-rotate(85deg) brightness(94%) contrast(89%);
+  padding: 0 4px;
+}
+
+.icons {
+  padding-top: 1.5em;
+  margin-left: 12px;
 }
 
 .footerLinks li + li {
@@ -1666,17 +1684,6 @@ footer {
 
 .footerLinks p {
   padding-right: 10px;
-}
-
-.right img {
-  width: 2vw !important;
-  filter: invert(40%) sepia(0%) saturate(0%) hue-rotate(85deg) brightness(94%) contrast(89%);
-  padding: 0 4px;
-}
-
-.icons {
-  padding-right: 4.5em;
-  padding-top: 1.5em;
 }
 
 /* More About Me underline effect */

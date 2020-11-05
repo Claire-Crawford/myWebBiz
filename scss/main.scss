@@ -351,6 +351,14 @@ body::after {
   /* background-size: 1600px 970px; */
 }
 
+// @media screen and (max-width: 1720px) {
+// .intro_1 {
+//     display: block;
+//     width: 20%;
+//   }
+// }
+
+
 #remote {
   /* margin-left: 220px; */
   float: right;
@@ -1622,9 +1630,9 @@ footer {
 }
 
 .row_footer h2 {
-  margin-top: 56px;
+  margin-top: 54px;
   padding-bottom: 18px;
-  font-size: 1.2em;
+  font-size: .9em;
   letter-spacing: 1px;
   font-family: "tenor sans";
   font-weight: normal;
@@ -1654,12 +1662,23 @@ footer {
   color: #333333;
 }
 
-.column {
-  float: left;
+.left {
+  width: 30%;
+  margin-left: 60px;
 }
 
-.left {
-  width: 60%;
+.middle {
+  width: 20%;
+  position: absolute;
+  left: 40%;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.right {
+  width: 20%;
+  float: right;
+  margin-right: 20px;
 }
 
 .column p {
@@ -1667,10 +1686,6 @@ footer {
   font-size: 1.4em;
 }
 
-.right {
-  width: 30%;
-  text-align: right;
-}
 
 .right p {
   font-size: 3.4em;
@@ -1680,12 +1695,13 @@ footer {
 }
 
 
-.middle {
-  width: 20%;
-  position: absolute;
-  left: 40%;
-  margin-top: 90px;
+.logo_container {
+  text-align: center; 
+}
+
+.ul_col1  {
   text-align: center;
+  width: 100%;
 }
 
 .ul_col1 li {
@@ -1710,16 +1726,25 @@ footer {
   width: 80%;
 }
 
+.right img {
+  width: 2vw !important;
+  filter: invert(40%) sepia(0%) saturate(0%) hue-rotate(85deg) brightness(94%) contrast(89%);
+  padding: 0 4px;
+}
+
+.icons {
+  padding-top: 1.5em;
+  margin-left: 12px;
+}
+
+
 
 // Styling Bottom of Footer 
 
 .footerLinks li+li {
   border-left: 2px solid #d1cfcf;
   padding: 0 6px 0 6px;
-
 }
-
-
 
 .footerLinks li a {
   font-family: "Cormorant Infant";
@@ -1760,16 +1785,6 @@ footer {
   padding-right: 10px;
 }
 
-.right img {
-  width: 2vw !important;
-  filter: invert(40%) sepia(0%) saturate(0%) hue-rotate(85deg) brightness(94%) contrast(89%);
-  padding: 0 4px;
-}
-
-.icons {
-  padding-right: 4.5em;
-  padding-top: 1.5em;
-}
 
 
 
