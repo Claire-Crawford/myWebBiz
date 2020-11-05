@@ -877,6 +877,9 @@ p.wider_p_about_info {
   text-decoration: none !important;
 }
 
+
+
+
 #base_container_fun_facts {
   display: flex;
   position: relative;
@@ -901,12 +904,15 @@ hr.about_me_above_fun_facts {
   height: 360px;
   width: 1000px;
   background-color: #fbf9ee;
+  background-color: green;
 }
 
 img#frida {
   width: 350px;
   border: 10px solid white;
-  margin-left: 60px;
+  // margin-left: 60px;
+  margin-top: -100px;
+  margin-right: 100px;
 }
 
 /* Slideshow container */
@@ -914,12 +920,13 @@ img#frida {
   position: absolute;
   display: flex;
   margin: auto;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-content: center;
   right: 35px;
   background: rgba(255, 255, 255, 0.8);
-  width: 50%;
+  background: skyblue;
+  width: 93%;
   height: 300px;
 }
 
@@ -928,31 +935,36 @@ img#frida {
   font-size: 0.8em;
   z-index: 99;
   color: #d2b96e;
+  color: black;
   letter-spacing: 1px;
   position: absolute;
   width: 100%;
-  text-align: center;
+  text-align: right;
+  margin-right: 420px;
   top: 10px;
 }
 
 /* Slides */
 .mySlides {
   position: relative;
-  display: none;
+  // display: none;
   text-align: center;
+  width: 93%;
+  margin-left:40px;
 }
 
-.mySlides p {
+.slideshow-container p {
   /* margin: auto; */
   text-align: center;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 375px !important;
-  margin-top: auto;
   font-family: Lora;
   font-size: 0.85em;
   font-style: italic;
   line-height: 1.5;
+  margin-top: 80px;
+  margin-right: 10px;
   color: #636363;
 }
 
