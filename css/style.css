@@ -856,10 +856,10 @@ hr.about_me_above_fun_facts {
   background-color: #fbf9ee;
 }
 
-img#frida {
+.slide_img {
   width: 350px;
   border: 10px solid white;
-  margin-top: -100px;
+  margin-top: -102px;
   margin-right: 60px;
 }
 
@@ -887,7 +887,7 @@ img#frida {
   width: 100%;
   text-align: right;
   margin-right: 410px;
-  top: 10px;
+  top: 30px;
 }
 
 /* Slides */
@@ -907,7 +907,7 @@ img#frida {
   font-size: 0.85em;
   font-style: italic;
   line-height: 1.5;
-  margin-top: 80px;
+  margin-top: 110px;
   color: #636363;
 }
 
