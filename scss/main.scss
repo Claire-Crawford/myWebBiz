@@ -632,7 +632,6 @@ div#two p {
   padding: 6px 46px !important;
   text-align: center;
   background: #fbf9ee;
-  // color: #333333 !important;
   color: #03aab6 !important;
   border: 3px solid #d2b96e;
   transition: 0.3s !important;
@@ -1432,28 +1431,66 @@ div#submit_contact {
   margin-bottom: -4px;
 }
 
+.services_intro {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 100px;
+  font-family: "Cormorant Infant";
+  font-size: 1.3em;
+  color: #666666;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.services_intro h2 {
+  font-size: 2em;
+  font-family: "FloralTheory";
+  font-weight: normal;
+}
+
+.services_intro h3 {
+  font-size: 1.2em;
+  font-family: "Cormorant Infant";
+  color: #666666;
+}
+
+.services-main {
+  height: auto;
+  margin-top: 40px;
+}
+
+.service_stars {
+  width: 10vw;
+  padding-left: 240px;
+  padding-top: 60px;
+  position: absolute;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   height: 90vh;
   width: 60%;
-  margin: 50px auto;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
   text-align: center;
 }
 
 .grid-item-1 {
-  padding: 60px;
+  padding: 0 60px;
   font-size: 14px;
   text-align: left;
-  margin-top: 10px;
+  // margin-top: 10px;
 }
 
 .grid-item-2 {
-  padding: 60px;
+  padding: 0 60px;
   font-size: 14px;
   text-align: left;
-  margin-top: 18px;
+  // margin-top: 18px;
 }
 
 .grid-container ul {
@@ -1481,19 +1518,19 @@ div#submit_contact {
 
 .grid-container p {
   line-height: 1.7em;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: #666666;
-  font-family: lora;
+  font-family: "Cormorant Infant";
 }
 
 p.price {
   font-family: "tenor sans";
 }
 
-.service-main hr {
-  width: 70%;
+.services-main hr {
+  // margin-top: 100px !important;
+  width: 70vw;
   border-top: 2px solid #d2b96e;
-  margin-top: -140px;
 }
 
 .service-end {
@@ -1600,6 +1637,12 @@ p.price {
   color: #03aab6;
 }
 
+.blog_star {
+  width: 30px;
+  position: absolute;
+  left: 348px;
+   margin-top: 60px;
+}
 
 
 
@@ -1681,6 +1724,13 @@ footer {
   margin-right: 20px;
 }
 
+.footer_stars {
+  width: 140px;
+  position: absolute;
+  right:410px;
+  bottom: 150px;
+}
+
 .column p {
   font-family: "Cormorant Infant";
   font-size: 1.4em;
@@ -1741,34 +1791,53 @@ footer {
 
 // Styling Bottom of Footer 
 
-.footerLinks li+li {
-  border-left: 2px solid #d1cfcf;
-  padding: 0 6px 0 6px;
+.footerLinks {
+  text-align: center;
+  position: absolute;
+  bottom: 12px;
+  left: 36%;
+  font-family: "tenor sans";
+  color: #8d8c8c !important;
+  font-size: 0.8em;
 }
 
-.footerLinks li a {
+.footerLinks li+li {
+  border-left: 2px solid #d1cfcf;
+  // padding: 0 6px 0 6px;
+}
+
+.footerLinks li {
   font-family: "Cormorant Infant";
   text-decoration: none;
   font-size: 13px;
   padding-right: 6px;
-  color: #acabab;
+  padding-left: 6px;
+  color: #999898;
 }
 
+.footerLinks a:link {
+color: #999898;
+text-decoration: none;
+}
+
+.footerLinks a:visited {
+  color: #999898;
+}
+
+.footerLinks a:hover {
+  color: #666666;
+}
+
+
+
+.footerlinks p {
+  padding-right: 0 !important;
+}
 
 .basefooter {
   margin: 0 auto;
   width: 100%;
   text-align: center;
-}
-
-.footerLinks {
-  text-align: center;
-  position: absolute;
-  bottom: 7px;
-  left: 35%;
-  font-family: "tenor sans";
-  color: #8d8c8c !important;
-  font-size: 0.8em;
 }
 
 .footerLinks ul {
@@ -1779,10 +1848,6 @@ footer {
 .footerLinks li {
   display: inline;
   float: left;
-}
-
-.footerLinks p {
-  padding-right: 10px;
 }
 
 
