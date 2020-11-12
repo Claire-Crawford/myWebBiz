@@ -330,7 +330,7 @@ body::after {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 52% 7% 40%;
+  grid-template-columns: 51% 5% 44%;
   align-items: center;
   height: 1300px;
   background: url(../images/torn_edge_bkgrd_2080x1300.jpg);
@@ -352,7 +352,7 @@ body::after {
   position: relative;
   text-align: right;
   top: -30vh;
-  right: 13vw;
+  right: 14vw;
 }
 .intro_2 #img_claire {
   width: 280px;
@@ -363,7 +363,7 @@ body::after {
 
 .intro_3 {
   text-align: left;
-  margin-right: 160px;
+  margin-right: 180px;
 }
 .intro_3 #one hr {
   margin-bottom: 50px;
@@ -397,7 +397,7 @@ body::after {
   color: #636363;
 }
 .intro_3 #two #last_p {
-  margin-left: 34px;
+  margin-left: 58px;
   text-decoration: none;
   color: #333333;
   font-family: "FloralTheory";
@@ -407,7 +407,7 @@ body::after {
   color: #03aab6;
 }
 .intro_3 #three .ajax {
-  margin-left: 110px;
+  margin-left: 140px;
   margin-top: -10px;
 }
 
