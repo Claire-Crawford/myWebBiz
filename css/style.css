@@ -412,54 +412,18 @@ body::after {
 }
 
 #stars_zodiac {
-  position: relative;
-  display: inline-block;
   float: right;
-  width: 700px;
   margin-top: -200px;
+  width: 700px;
   opacity: 0.5;
 }
 
-.good_wrapper {
+.wrap_goodFit .good_wrapper {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
 }
-
-.wrap_goodFit h2 {
-  font-family: "FloralTheory" !important;
-  color: #333333;
-  font-size: 2.8em;
-  font-weight: normal;
-  text-align: center;
-  margin-bottom: 120px;
-  margin-top: -74px;
-}
-
-.good_wrapper h3 {
-  text-align: center;
-  font-size: 4em;
-  margin-top: 30px;
-  font-family: "FloralTheory";
-  font-weight: normal;
-  color: #03aab6;
-}
-
-.good_fit_hide_me hr {
-  color: black;
-  margin-top: -30px;
-}
-
-.good_fit_hide_me {
-  position: relative;
-  margin: 0px 60px 150px 60px;
-  height: 340px;
-  width: 360px;
-  border: 6px solid rgba(210, 185, 110, 0.5);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.good_wrapper p {
+.wrap_goodFit .good_wrapper p {
   font-size: 1.3em;
   padding: 50px;
   color: #636363;
@@ -469,8 +433,36 @@ body::after {
   top: 18%;
   text-align: center;
 }
-
-.secondHr {
+.wrap_goodFit h2 {
+  font-family: "FloralTheory" !important;
+  color: #333333;
+  font-size: 2.8em;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 120px;
+  margin-top: 80px;
+}
+.wrap_goodFit .good_fit_hide_me {
+  position: relative;
+  margin: 0px 60px 150px 60px;
+  height: 340px;
+  width: 360px;
+  border: 6px solid rgba(210, 185, 110, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.wrap_goodFit .good_fit_hide_me h3 {
+  text-align: center;
+  font-size: 4em;
+  margin-top: 30px;
+  font-family: "FloralTheory";
+  font-weight: normal;
+  color: #03aab6;
+}
+.wrap_goodFit .good_fit_hide_me hr {
+  color: black;
+  margin-top: -30px;
+}
+.wrap_goodFit .secondHr {
   width: 90em;
   border-top: 2px solid #d2b962;
   margin-bottom: 100px;
@@ -482,14 +474,12 @@ body::after {
   width: 100%;
   margin: 0 auto;
 }
-
 .finalP_goodFit div {
   text-align: center;
   margin: 0 auto;
   width: 50%;
 }
-
-.inside_finalP_1 p {
+.finalP_goodFit .inside_finalP_1 p {
   font-family: "tenor sans";
   font-family: "Cormorant Infant";
   font-size: 1.6em;
@@ -498,12 +488,17 @@ body::after {
   line-height: 1.5em;
   text-align: center;
 }
-
-.inside_finalP_2 {
+.finalP_goodFit .inside_finalP_1 .singleStar {
+  width: 2vw;
+  position: absolute;
+  right: 31%;
+  margin-top: -98px;
+  opacity: 0.8;
+}
+.finalP_goodFit .inside_finalP_2 {
   padding-bottom: 50px;
 }
-
-.inside_finalP_2 h3 {
+.finalP_goodFit .inside_finalP_2 h3 {
   font-family: "FloralTheory" !important;
   color: #333333 !important;
   text-transform: none;
@@ -512,8 +507,7 @@ body::after {
   padding-top: 0px;
   padding-bottom: 30px;
 }
-
-.button_dreamMotion {
+.finalP_goodFit .inside_finalP_2 .button_dreamMotion {
   text-decoration: none;
   cursor: pointer;
   padding: 6px 46px !important;
@@ -525,34 +519,18 @@ body::after {
   font-family: "tenor sans";
   font-size: 1.2em;
 }
-
-.button_dreamMotion:hover {
+.finalP_goodFit .inside_finalP_2 .button_dreamMotion:hover {
   background: #666666 !important;
   color: white !important;
   border: 3px solid #d2b96e;
 }
-
-.button_dreamMotion a {
+.finalP_goodFit .inside_finalP_2 .button_dreamMotion a {
   text-decoration: none !important;
 }
-
-.dreamMotion {
-  padding: 20px 0;
-}
-
-.good_fit_contact {
+.finalP_goodFit .inside_finalP_2 .good_fit_contact {
   padding-bottom: 50px;
 }
-
-.singleStar {
-  width: 2vw;
-  position: absolute;
-  right: 31%;
-  margin-top: -98px;
-  opacity: 0.8;
-}
-
-.threeStars {
+.finalP_goodFit .inside_finalP_2 .threeStars {
   width: 7vw;
   position: absolute;
   left: 27%;

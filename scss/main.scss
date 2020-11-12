@@ -372,10 +372,10 @@ body::after {
   }
 
   #zodiac_leo {
-   position: absolute;
-   top: -440px;
-   left: 90px;
-   opacity: 0.3;
+    position: absolute;
+    top: -440px;
+    left: 90px;
+    opacity: 0.3;
   }
 }
 
@@ -607,12 +607,14 @@ body::after {
 // Styling for Good Fit Area Home Page
 
 #stars_zodiac {
-  position: relative;
-  display: inline-block;
+  // display: inline-block;
   // margin-right: 10px;
   float: right;
-  width: 700px;
+  // display: relative;
+  // margin-right: 0;
   margin-top: -200px;
+  width: 700px;
+  // margin-top: -200px;
   opacity: 0.5;
 }
 
@@ -631,156 +633,153 @@ body::after {
 //   opacity: 0.3;
 // }
 
-.good_wrapper {
-  // position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+
+.wrap_goodFit {
+  .good_wrapper {
+    // position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    p {
+      font-size: 1.3em;
+      padding: 50px;
+      color: #636363;
+      font-family: "Cormorant Infant";
+      line-height: 25px;
+      position: absolute;
+      top: 18%;
+      text-align: center;
+    }
+  }
+
+  h2 {
+    font-family: "FloralTheory" !important;
+    color: #333333;
+    font-size: 2.8em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 80px;
+  }
+
+  .good_fit_hide_me {
+    position: relative;
+    margin: 0px 60px 150px 60px;
+    height: 340px;
+    width: 360px;
+    border: 6px solid rgba(210, 185, 110, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+    h3 {
+      text-align: center;
+      font-size: 4em;
+      margin-top: 30px;
+      font-family: "FloralTheory";
+      font-weight: normal;
+      color: #03aab6;
+    }
+
+    hr {
+      color: black;
+      margin-top: -30px;
+    }
+  }
+
+  .secondHr {
+    width: 90em;
+    border-top: 2px solid #d2b962;
+    margin-bottom: 100px;
+  }
 }
 
-.wrap_goodFit h2 {
-  font-family: "FloralTheory" !important;
-  color: #333333;
-  font-size: 2.8em;
-  font-weight: normal;
-  text-align: center;
-  margin-bottom: 120px;
-  margin-top: -74px;
-}
-
-.good_wrapper h3 {
-  text-align: center;
-  font-size: 4em;
-  margin-top: 30px;
-  font-family: "FloralTheory";
-  font-weight: normal;
-  color: #03aab6;
-}
-
-.good_fit_hide_me hr {
-  color: black;
-  margin-top: -30px;
-}
-
-.good_fit_hide_me {
-  position: relative;
-  margin: 0px 60px 150px 60px;
-  // flex-basis: calc(14%);
-  height: 340px;
-  width: 360px;
-  // text-align: center;
-  // border: 8px solid rgba(207, 188, 100, 0.4);
-  border: 6px solid rgba(210, 185, 110, 0.5);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.good_wrapper p {
-  font-size: 1.3em;
-  padding: 50px;
-  color: #636363;
-  font-family: "Cormorant Infant";
-  line-height: 25px;
-  position: absolute;
-  top: 18%;
-  text-align: center;
-}
-
-.secondHr {
-  width: 90em;
-  border-top: 2px solid #d2b962;
-  margin-bottom: 100px;
-}
 
 .finalP_goodFit {
   height: auto;
   text-align: center;
   width: 100%;
   margin: 0 auto;
+
+  div {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .inside_finalP_1 {
+    p {
+      font-family: 'tenor sans';
+      font-family: 'Cormorant Infant';
+      font-size: 1.6em;
+      padding-bottom: 30px;
+      // text-transform: uppercase;
+      color: #666666;
+      line-height: 1.5em;
+      text-align: center;
+    }
+
+    .singleStar {
+      width: 2vw;
+      position: absolute;
+      right: 31%;
+      margin-top: -98px;
+      opacity: 0.8;
+    }
+  }
+
+  .inside_finalP_2 {
+    padding-bottom: 50px;
+
+    h3 {
+      font-family: 'FloralTheory' !important;
+      color: #333333 !important;
+      text-transform: none;
+      font-weight: normal;
+      font-size: 2.7em;
+      padding-top: 0px;
+      padding-bottom: 30px;
+    }
+
+    .button_dreamMotion {
+      text-decoration: none;
+      cursor: pointer;
+      padding: 6px 46px !important;
+      text-align: center;
+      background: #fbf9ee;
+      color: #03aab6 !important;
+      border: 3px solid #d2b96e;
+      transition: 0.3s !important;
+      font-family: "tenor sans";
+      font-size: 1.2em;
+    }
+
+    .button_dreamMotion:hover {
+      background: #666666 !important;
+      color: white !important;
+      border: 3px solid #d2b96e;
+    }
+
+    .button_dreamMotion a {
+      text-decoration: none !important;
+    }
+
+    .good_fit_contact {
+      padding-bottom: 50px;
+    }
+
+    .threeStars {
+      width: 7vw;
+      position: absolute;
+      left: 27%;
+      margin-top: -60px;
+      opacity: 0.7;
+    }  
+  }
 }
 
-.finalP_goodFit div {
-  text-align: center;
-  margin: 0 auto;
-  width: 50%;
-}
-
-.inside_finalP_1 p {
-  font-family: 'tenor sans';
-  font-family: 'Cormorant Infant';
-  font-size: 1.6em;
-  padding-bottom: 30px;
-  // text-transform: uppercase;
-  color: #666666;
-  line-height: 1.5em;
-  text-align: center;
-}
-
-.inside_finalP_2 {
-  padding-bottom: 50px;
-}
 
 
-.inside_finalP_2 h3 {
-  font-family: 'FloralTheory' !important;
-  color: #333333 !important;
-  text-transform: none;
-  font-weight: normal;
-  font-size: 2.7em;
-  padding-top: 0px;
-  padding-bottom: 30px;
 
-}
-
-
-.button_dreamMotion {
-  text-decoration: none;
-  cursor: pointer;
-  padding: 6px 46px !important;
-  text-align: center;
-  background: #fbf9ee;
-  color: #03aab6 !important;
-  border: 3px solid #d2b96e;
-  transition: 0.3s !important;
-  font-family: "tenor sans";
-  font-size: 1.2em;
-}
-
-.button_dreamMotion:hover {
-  // color: #03aab6 !important;
-  // background: white !important;
-  // border: 3px solid #d2b96e;
-  background: #666666 !important;
-  color: white !important;
-  border: 3px solid #d2b96e;
-}
-
-.button_dreamMotion a {
-  text-decoration: none !important;
-}
-
-.dreamMotion {
-  padding: 20px 0;
-}
-
-.good_fit_contact {
-  padding-bottom: 50px;
-}
-
-.singleStar {
-  width: 2vw;
-  position: absolute;
-  right: 31%;
-  margin-top: -98px;
-  opacity: 0.8;
-}
-
-.threeStars {
-  width: 7vw;
-  position: absolute;
-  left: 27%;
-  margin-top: -60px;
-  opacity: 0.7;
-}
 
 /* Back to top bird styling */
 #scroll {
