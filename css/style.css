@@ -324,27 +324,34 @@ body::after {
 
 .container_center_home {
   width: auto;
-  padding-bottom: -20px;
-  height: 1500px;
+  margin-top: 80px;
+  height: 1300px;
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: 52% 7% 40%;
-  margin-top: 100px;
-  padding-bottom: 10px;
+  align-items: center;
   height: 1300px;
   background: url(../images/torn_edge_bkgrd_2080x1300.jpg);
 }
 
 .intro_1 {
-  margin-top: 300px;
   text-align: right;
+  position: relative;
+  align-items: center;
 }
+.intro_1 #zodiac_leo {
+  position: absolute;
+  top: -440px;
+  left: 90px;
+  opacity: 0.3;
+}
+
 .intro_2 {
   position: relative;
   text-align: right;
-  top: 16vh;
+  top: -30vh;
   right: 13vw;
 }
 .intro_2 #img_claire {
@@ -355,9 +362,8 @@ body::after {
 }
 
 .intro_3 {
-  margin-top: 270px;
   text-align: left;
-  margin-right: 200px;
+  margin-right: 160px;
 }
 .intro_3 #one hr {
   margin-bottom: 50px;
@@ -380,12 +386,13 @@ body::after {
   color: #636363;
 }
 .intro_3 #two {
-  width: 80%;
+  width: 75%;
 }
 .intro_3 #two p {
   padding-bottom: 14px;
   line-height: 1.5;
   font-size: 1em;
+  text-align: justify;
   font-family: "Cormorant Infant";
   color: #636363;
 }
