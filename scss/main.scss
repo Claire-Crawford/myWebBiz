@@ -329,174 +329,275 @@ body::after {
   letter-spacing: 1px;
 }
 
+
+// STYLING 2ND PART OF THE HOME PAGE 
+
 .container_center_home {
   width: auto;
   padding-bottom: -20px;
   height: 1500px;
+  // margin-top: 100px;
 }
+
+
+// COMMENTING THIS OUT WHILE I TRY A DIFFERENT GRIB LAYOUT
+// .wrapper {
+//   display: grid;
+//   position: relative;
+//   grid-template-columns: 54% 46%;
+//   align-content: center;
+//   margin-top: 80px;
+//   padding-bottom: 10px;
+//   height: 1300px;
+//   background: url(../images/torn_edge_bkgrd_2080x1300.jpg);
+//   /* size of background image is 1600 x 1000 px */
+//   /* background-size: 1600px 970px; */
+// }
 
 .wrapper {
   display: grid;
-  position: relative;
-  grid-template-columns: 54% 46%;
-  align-content: center;
-  margin-top: 80px;
+  // grid-template-columns: 40% 20% 40%;
+  grid-template-columns: 52% 7% 40%;
+  margin-top: 100px;
   padding-bottom: 10px;
-  // margin-bottom: 100px;
   height: 1300px;
-  /* width: 100%; */
   background: url(../images/torn_edge_bkgrd_2080x1300.jpg);
-
-  /* size of background image is 1600 x 1000 px */
-  /* background-size: 1600px 970px; */
 }
 
-// @media screen and (max-width: 1720px) {
-// .intro_1 {
-//     display: block;
-//     width: 20%;
-//   }
-// }
+.intro_1 {
+  margin-top: 300px;
+  // margin-left: 120px;
+  text-align: right;
+  // width: 80%;
 
-
-#remote {
-  /* margin-left: 220px; */
-  float: right;
-  width: 650px;
-  margin-right: -30px;
-  margin-top: 590px;
-  /* margin-right: -140px; */
-  height: auto;
-  position: relative;
-}
-
-#img_claire {
-  position: absolute;
-  top: 200px;
-  left: 720px;
-  width: 280px;
-  padding: 16px;
-  border: 3px solid #d2b96e;
-  background-color: white;
-}
-
-#zodiac_leo {
-  position: absolute;
-  // width: 27%;
-  height: 55%;
-  top: -106px;
-  left: 100px;
-  opacity: 0.3;
+  #remote {}
 }
 
 .intro_2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 300px !important;
-  height: 940px;
-  margin-top: 570px;
-  margin-left: 54px;
-  padding-bottom: 300px;
-  float: left;
+  position: relative;
+  text-align: right;
+  top: 16vh;
+  right: 13vw;
+
+  #img_claire {
+    width: 280px;
+    padding: 16px;
+    border: 3px solid #d2b96e;
+    background-color: white;
+  }
 }
 
-div#one {
-  flex-direction: flex-start;
-  margin-left: 50px;
-  // margin-left: 12px;
-  // text-align:left;
+
+.intro_3 {
+  margin-top: 270px;
+  text-align: left;
+  // width: 100%;
+  margin-right: 200px;
+
+  #one {
+    hr {
+      margin-bottom: 50px;
+      margin-left: 0;
+      width: 108px;
+      border: 0.8px solid #d2b96e;
+      background: #d2b96e;
+    }
+
+    #first_p {
+      font-size: 3.8em;
+      padding-bottom: 40px;
+      font-family: "FloralTheory";
+      color: #03aab6;
+    }
+
+    #second_p {
+      font-family: "tenor sans";
+      font-size: 1.2em;
+      padding-bottom: 20px;
+      padding-top: 34px;
+      color: #636363;
+    }
+  }
+
+  #two {
+    width: 80%;
+
+    p {
+      padding-bottom: 14px;
+      line-height: 1.5;
+      font-size: 1em;
+      //   width: 370px;
+      //  text-align: justify;
+      font-family: "Cormorant Infant";
+      color: #636363;
+    }
+
+    #last_p {
+      //   margin-left: 25px;
+      margin-left: 34px;
+      text-decoration: none;
+      color: #333333;
+      font-family: "FloralTheory";
+      font-size: 3.2em;
+    }
+
+    #last_p:hover {
+      color: #03aab6;
+    }
+  }
+
+  #three {
+    .ajax {
+      margin-left: 110px;
+      margin-top: -10px;
+    }
+  }
+
 }
 
-img#intro_2_claire {
-  width: 170px;
-  margin-left: 30px;
-  margin-top: -10px;
-  margin-bottom: 10px;
-}
 
-div#one hr {
-  margin-left: 0 !important;
-  margin-bottom: 50px;
-  width: 108px;
-  border: 0.8px solid #d2b96e;
-  background: #d2b96e;
-  // margin-bottom: 20px;
-}
 
-div#one #first_p {
-  font-size: 3.8em;
-  padding-bottom: 40px;
-  font-family: "FloralTheory";
-  color: #03aab6;
-  margin-top: -10px;
-}
+// #remote {
+//   /* margin-left: 220px; */
+//   float: right;
+//   width: 650px;
+//   margin-right: -30px;
+//   margin-top: 590px;
+//   /* margin-right: -140px; */
+//   height: auto;
+//   position: relative;
+// }
 
-.intro_2 #second_p {
-  font-family: "tenor sans";
-  font-size: 1.2em;
-  padding-bottom: 20px;
-  padding-top: 34px;
-  color: #636363;
-}
+// #img_claire {
+//   position: absolute;
+//   top: 200px;
+//   left: 720px;
+//   width: 280px;
+//   padding: 16px;
+//   border: 3px solid #d2b96e;
+//   background-color: white;
+// }
 
-div#two {
-  flex: 1;
-  background-color: transparent;
-  vertical-align: middle;
-  margin-left: 50px;
-}
+// #zodiac_leo {
+//   position: absolute;
+//   // width: 27%;
+//   height: 55%;
+//   top: -106px;
+//   left: 100px;
+//   opacity: 0.3;
+// }
 
-div#do_this {
-  flex: 1;
-  margin-left: 30px;
-  margin-top: -20px;
-  width: 100px;
-}
+// .intro_2 {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-content: center;
+//   width: 300px !important;
+//   height: 940px;
+//   margin-top: 570px;
+//   margin-left: 54px;
+//   padding-bottom: 300px;
+//   float: left;
+// }
 
-div#three {
-  flex: 1;
-  width: 300px;
-  margin-left: 10px;
-  margin-top: -10px;
-}
+// div#one {
+//   flex-direction: flex-start;
+//   margin-left: 50px;
+//   // margin-left: 12px;
+//   // text-align:left;
+// }
 
-div#three a {
-  margin-left: 140px;
-  margin-top: 0;
-  z-index: 1;
-}
+// img#intro_2_claire {
+//   width: 170px;
+//   margin-left: 30px;
+//   margin-top: -10px;
+//   margin-bottom: 10px;
+// }
 
-#two>div {
-  background-color: transparent;
-  width: 370px;
-  height: 400px;
-  margin-left: -10px;
-}
+// div#one hr {
+//   margin-left: 0 !important;
+//   margin-bottom: 50px;
+//   width: 108px;
+//   border: 0.8px solid #d2b96e;
+//   background: #d2b96e;
+//   // margin-bottom: 20px;
+// }
 
-div#two p {
-  padding-bottom: 14px;
-  line-height: 1.5;
-  font-size: 1em;
-  width: 370px;
-  text-align: justify;
-  font-family: "Cormorant Infant";
-  color: #636363;
-}
+// div#one #first_p {
+//   font-size: 3.8em;
+//   padding-bottom: 40px;
+//   font-family: "FloralTheory";
+//   color: #03aab6;
+//   margin-top: -10px;
+// }
 
-#last_p {
-  margin-left: 25px;
-  // margin-top: -40px;
-  text-decoration: none;
-  color: #333333;
-  font-family: "FloralTheory";
-  font-size: 3.2em;
-}
+// .intro_2 #second_p {
+//   font-family: "tenor sans";
+//   font-size: 1.2em;
+//   padding-bottom: 20px;
+//   padding-top: 34px;
+//   color: #636363;
+// }
 
-#last_p:hover {
-  color: #03aab6;
-}
+// div#two {
+//   flex: 1;
+//   background-color: transparent;
+//   vertical-align: middle;
+//   margin-left: 50px;
+// }
+
+// div#do_this {
+//   flex: 1;
+//   margin-left: 30px;
+//   margin-top: -20px;
+//   width: 100px;
+// }
+
+// div#three {
+//   flex: 1;
+//   width: 300px;
+//   margin-left: 10px;
+//   margin-top: -10px;
+// }
+
+// div#three a {
+//   margin-left: 140px;
+//   margin-top: 0;
+//   z-index: 1;
+// }
+
+// #two>div {
+//   background-color: transparent;
+//   width: 370px;
+//   height: 400px;
+//   margin-left: -10px;
+// }
+
+// div#two p {
+//   padding-bottom: 14px;
+//   line-height: 1.5;
+//   font-size: 1em;
+//   width: 370px;
+//   text-align: justify;
+//   font-family: "Cormorant Infant";
+//   color: #636363;
+// }
+
+// #last_p {
+//   margin-left: 25px;
+//   // margin-top: -40px;
+//   text-decoration: none;
+//   color: #333333;
+//   font-family: "FloralTheory";
+//   font-size: 3.2em;
+// }
+
+// #last_p:hover {
+//   color: #03aab6;
+// }
+
+
+
 
 // Styling for Good Fit Area Home Page
 
@@ -1641,7 +1742,7 @@ p.price {
   width: 30px;
   position: absolute;
   left: 348px;
-   margin-top: 60px;
+  margin-top: 60px;
 }
 
 
@@ -1727,7 +1828,7 @@ footer {
 .footer_stars {
   width: 140px;
   position: absolute;
-  right:410px;
+  right: 410px;
   bottom: 150px;
 }
 
@@ -1746,10 +1847,10 @@ footer {
 
 
 .logo_container {
-  text-align: center; 
+  text-align: center;
 }
 
-.ul_col1  {
+.ul_col1 {
   text-align: center;
   width: 100%;
 }
@@ -1816,8 +1917,8 @@ footer {
 }
 
 .footerLinks a:link {
-color: #999898;
-text-decoration: none;
+  color: #999898;
+  text-decoration: none;
 }
 
 .footerLinks a:visited {

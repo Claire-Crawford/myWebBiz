@@ -330,150 +330,78 @@ body::after {
 
 .wrapper {
   display: grid;
-  position: relative;
-  grid-template-columns: 54% 46%;
-  align-content: center;
-  margin-top: 80px;
+  grid-template-columns: 52% 7% 40%;
+  margin-top: 100px;
   padding-bottom: 10px;
   height: 1300px;
-  /* width: 100%; */
   background: url(../images/torn_edge_bkgrd_2080x1300.jpg);
-  /* size of background image is 1600 x 1000 px */
-  /* background-size: 1600px 970px; */
 }
 
-#remote {
-  /* margin-left: 220px; */
-  float: right;
-  width: 650px;
-  margin-right: -30px;
-  margin-top: 590px;
-  /* margin-right: -140px; */
-  height: auto;
+.intro_1 {
+  margin-top: 300px;
+  text-align: right;
+}
+.intro_2 {
   position: relative;
+  text-align: right;
+  top: 16vh;
+  right: 13vw;
 }
-
-#img_claire {
-  position: absolute;
-  top: 200px;
-  left: 720px;
+.intro_2 #img_claire {
   width: 280px;
   padding: 16px;
   border: 3px solid #d2b96e;
   background-color: white;
 }
 
-#zodiac_leo {
-  position: absolute;
-  height: 55%;
-  top: -106px;
-  left: 100px;
-  opacity: 0.3;
+.intro_3 {
+  margin-top: 270px;
+  text-align: left;
+  margin-right: 200px;
 }
-
-.intro_2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 300px !important;
-  height: 940px;
-  margin-top: 570px;
-  margin-left: 54px;
-  padding-bottom: 300px;
-  float: left;
-}
-
-div#one {
-  flex-direction: flex-start;
-  margin-left: 50px;
-}
-
-img#intro_2_claire {
-  width: 170px;
-  margin-left: 30px;
-  margin-top: -10px;
-  margin-bottom: 10px;
-}
-
-div#one hr {
-  margin-left: 0 !important;
+.intro_3 #one hr {
   margin-bottom: 50px;
+  margin-left: 0;
   width: 108px;
   border: 0.8px solid #d2b96e;
   background: #d2b96e;
 }
-
-div#one #first_p {
+.intro_3 #one #first_p {
   font-size: 3.8em;
   padding-bottom: 40px;
   font-family: "FloralTheory";
   color: #03aab6;
-  margin-top: -10px;
 }
-
-.intro_2 #second_p {
+.intro_3 #one #second_p {
   font-family: "tenor sans";
   font-size: 1.2em;
   padding-bottom: 20px;
   padding-top: 34px;
   color: #636363;
 }
-
-div#two {
-  flex: 1;
-  background-color: transparent;
-  vertical-align: middle;
-  margin-left: 50px;
+.intro_3 #two {
+  width: 80%;
 }
-
-div#do_this {
-  flex: 1;
-  margin-left: 30px;
-  margin-top: -20px;
-  width: 100px;
-}
-
-div#three {
-  flex: 1;
-  width: 300px;
-  margin-left: 10px;
-  margin-top: -10px;
-}
-
-div#three a {
-  margin-left: 140px;
-  margin-top: 0;
-  z-index: 1;
-}
-
-#two > div {
-  background-color: transparent;
-  width: 370px;
-  height: 400px;
-  margin-left: -10px;
-}
-
-div#two p {
+.intro_3 #two p {
   padding-bottom: 14px;
   line-height: 1.5;
   font-size: 1em;
-  width: 370px;
-  text-align: justify;
   font-family: "Cormorant Infant";
   color: #636363;
 }
-
-#last_p {
-  margin-left: 25px;
+.intro_3 #two #last_p {
+  margin-left: 34px;
   text-decoration: none;
   color: #333333;
   font-family: "FloralTheory";
   font-size: 3.2em;
 }
-
-#last_p:hover {
+.intro_3 #two #last_p:hover {
   color: #03aab6;
+}
+.intro_3 #three .ajax {
+  margin-left: 110px;
+  margin-top: -10px;
 }
 
 #stars_zodiac {
