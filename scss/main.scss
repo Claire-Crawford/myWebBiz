@@ -80,70 +80,7 @@ body::after {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
-// navigation links
-.inner_main_menu {
-  margin: 0 auto;
-  width: 1170px;
-}
 
-.inner_main_menu ul {
-  margin: 0;
-  list-style: none;
-  text-align: right;
-}
-
-.inner_main_menu ul li {
-  float: none;
-  display: inline-block;
-  position: relative;
-}
-
-.inner_main_menu ul li:nth-child(1) {
-  float: left;
-}
-
-.inner_main_menu ul li:nth-child(2) {
-  float: left;
-}
-
-.inner_main_menu ul li:nth-child(3) {
-  float: left;
-}
-
-.inner_main_menu ul li a {
-  color: #666666;
-  font-family: "tenor sans";
-  font-size: 1em;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: block;
-  margin: 5px 20px 5px 20px;
-}
-
-.inner_main_menu ul li a:link {
-  color: #666666;
-}
-
-.inner_main_menu ul li a:visited {
-  color: #666666;
-}
-
-.inner_main_menu ul li a:hover {
-  color: #333333;
-}
-
-#menu {
-  background-color: white;
-  font-size: 12px;
-}
-
-#logo_Claire {
-  width: auto;
-  height: auto;
-  transition: 0.5s;
-  margin-top: 0px;
-}
 
 #main_menu {
   transition: 0.5s;
@@ -153,19 +90,117 @@ body::after {
   background-color: white;
   z-index: 9999;
   padding: 80px 0;
+
+  .logo_area {
+    top: 44px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    text-align: center;
+    transition: 0.5s;
+    width: 350px;
+  }
+
+  #logo_Claire {
+    width: auto;
+    height: auto;
+    transition: 0.5s;
+    margin-top: 0px;
+  }
+
 }
 
-.logo_area {
-  top: 62px;
-  position: absolute;
-  left: 50%;
-  margin-left: -150px;
-  text-align: center;
-  transition: 0.5s;
-  width: 350px;
+
+// navigation links
+.inner_main_menu {
+  margin: 0 auto;
+  width: 1170px;
+
+  #menu {
+    background-color: white;
+    font-size: 12px;
+
+    // underline from center on navigation links
+    a {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: rgb(211, 211, 211);
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    text-align: right;
+  }
+
+  li {
+    float: none;
+    display: inline-block;
+    position: relative;
+  }
+
+  li:nth-child(1) {
+    float: left;
+  }
+
+  li:nth-child(2) {
+    float: left;
+  }
+
+  li:nth-child(3) {
+    float: left;
+  }
+
+  a {
+    color: #666666;
+    font-family: "tenor sans";
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    margin: 5px 20px 5px 20px;
+  }
+
+  a:link {
+    color: #666666;
+  }
+
+  a:visited {
+    color: #666666;
+  }
+
+  a:hover {
+    color: #333333;
+  }
 }
 
-@media only screen and (min-width: 200px) and (max-width: 767px) {
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .slicknav_menu {
     display: block;
   }
@@ -189,45 +224,16 @@ body::after {
   }
 }
 
-// underline from center on navigation links
-#menu a {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-#menu a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(211, 211, 211);
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-#menu a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-#moodboard {
-  // position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 220px;
-  // width: 100%;
-  max-width: 100%;
-  display: block;
-  height: auto;
+#main {
+  #moodboard {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 220px;
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
 }
 
 #just_below_moodboard {
@@ -238,269 +244,257 @@ body::after {
   justify-content: center;
   align-content: center;
   text-align: center;
-}
 
+  .first_div_below_moodboard {
+    position: relative;
+    padding-bottom: 20px;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.first_div_below_moodboard {
-  position: relative;
-  padding-bottom: 20px;
-  /* margin: 0 auto; */
-  /* text-align: center; */
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    .moodboard_h2 {
+      font-family: "FloralTheory";
+      font-weight: normal;
+      color: #363636;
+      font-size: 80px;
+      letter-spacing: 2px;
+      position: absolute;
+      text-align: center;
+      padding-top: 72px;
+      animation-name: block2;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+    }
 
-.moodboard_h2 {
-  font-family: "FloralTheory";
-  font-weight: normal;
-  color: #363636;
-  font-size: 80px;
-  letter-spacing: 2px;
-  position: absolute;
-  text-align: center;
-  padding-top: 72px;
-  animation-name: block2;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
+    @keyframes block2 {
+      0% {
+        top: -600px;
+      }
 
-@keyframes block2 {
-  0% {
-    top: -600px;
+      100% {
+        top: 0px;
+      }
+    }
+
+    hr {
+      border: 0.8px solid #d2b96e;
+      background: #d2b96e;
+      width: 880px;
+      margin-top: 118px;
+      margin-bottom: 20px;
+    }
   }
 
-  100% {
-    top: 0px;
-  }
-}
-
-.craft_code_under_moodboard {
-  position: relative;
-  animation-name: block3;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes block3 {
-  from {
-    top: 500px;
+  .craft_code_under_moodboard {
+    position: relative;
+    animation-name: block3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
   }
 
-  to {
-    top: 1px;
+  @keyframes block3 {
+    from {
+      top: 500px;
+    }
+
+    to {
+      top: 1px;
+    }
   }
-}
 
-#just_below_moodboard hr {
-  border: 0.8px solid #d2b96e;
-  background: #d2b96e;
-  width: 880px;
-  margin-top: 118px;
-  margin-bottom: 20px;
-}
+  .crafting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+  }
 
-.crafting {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0px;
-}
+  p {
+    font-family: "Tenor sans";
+    text-transform: uppercase;
+    color: #636363;
+    font-size: 1.3em;
+    width: 930px;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 0 !important;
+  }
 
-#just_below_moodboard p {
-  font-family: "Tenor sans";
-  text-transform: uppercase;
-  color: #636363;
-  font-size: 1.3em;
-  width: 930px;
-  text-align: center;
-  line-height: 1.4;
-  margin-bottom: 0 !important;
-}
-
-.craft_code_under_moodboard h3 {
-  font-family: "Cormorant Infant" !important;
-  // color: #d2b96e;
-  color: #03aab6 !important;
-  font-size: 0.9em;
-  margin-top: 5px;
-  text-align: center;
-  letter-spacing: 1px;
+  h3 {
+    font-family: "Cormorant Infant" !important;
+    // color: #d2b96e;
+    color: #03aab6 !important;
+    font-size: 0.9em;
+    margin-top: 5px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
 }
 
 .container_center_home {
   width: auto;
   padding-bottom: -20px;
   height: 1500px;
+
+  .wrapper {
+    display: grid;
+    position: relative;
+    grid-template-columns: 54% 46%;
+    align-content: center;
+    margin-top: 80px;
+    padding-bottom: 10px;
+    height: 1300px;
+    background: url(../images/torn_edge_bkgrd_2080x1300.jpg);
+  }
+
+  #remote {
+    /* margin-left: 220px; */
+    float: right;
+    width: 650px;
+    margin-right: -30px;
+    margin-top: 590px;
+    /* margin-right: -140px; */
+    height: auto;
+    position: relative;
+  }
+
+  #zodiac_leo {
+    position: absolute;
+    // width: 27%;
+    height: 55%;
+    top: -106px;
+    left: 100px;
+    opacity: 0.3;
+  }
+
+  #img_claire {
+    position: absolute;
+    top: 200px;
+    left: 720px;
+    width: 280px;
+    padding: 16px;
+    border: 3px solid #d2b96e;
+    background-color: white;
+  }
+
+  .intro_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 300px !important;
+    height: 940px;
+    margin-top: 570px;
+    margin-left: 54px;
+    padding-bottom: 300px;
+    float: left;
+
+    div#one {
+      flex-direction: flex-start;
+      margin-left: 50px;
+      // margin-left: 12px;
+      // text-align:left;
+
+      #first_p {
+        font-size: 3.8em;
+        padding-bottom: 40px;
+        font-family: "FloralTheory";
+        color: #03aab6;
+        margin-top: -10px;
+      }
+
+      #second_p {
+        font-family: "tenor sans";
+        font-size: 1.2em;
+        padding-bottom: 20px;
+        padding-top: 34px;
+        color: #636363;
+      }
+
+      hr {
+        margin-left: 0 !important;
+        margin-bottom: 50px;
+        width: 108px;
+        border: 0.8px solid #d2b96e;
+        background: #d2b96e;
+        // margin-bottom: 20px;
+      }
+    }
+
+    div#two {
+      flex: 1;
+      background-color: transparent;
+      vertical-align: middle;
+      margin-left: 50px;
+
+      p {
+        padding-bottom: 14px;
+        line-height: 1.5;
+        font-size: 1em;
+        width: 370px;
+        text-align: justify;
+        font-family: "Cormorant Infant";
+        color: #636363;
+      }
+
+      #last_p {
+        margin-left: 25px;
+        // margin-top: -40px;
+        text-decoration: none;
+        color: #333333;
+        font-family: "FloralTheory";
+        font-size: 3.2em;
+      }
+
+      #last_p:hover {
+        color: #03aab6;
+      }
+    }
+
+    div#three {
+      flex: 1;
+      width: 300px;
+      margin-left: 10px;
+      margin-top: -10px;
+
+      a {
+        margin-left: 140px;
+        margin-top: 0;
+        z-index: 1;
+      }
+    }
+  }
+
+  #stars_zodiac {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 700px;
+    margin-top: -200px;
+    opacity: 0.5;
+  }
 }
 
-.wrapper {
-  display: grid;
-  position: relative;
-  grid-template-columns: 54% 46%;
-  align-content: center;
-  margin-top: 80px;
-  padding-bottom: 10px;
-  // margin-bottom: 100px;
-  height: 1300px;
-  /* width: 100%; */
-  background: url(../images/torn_edge_bkgrd_2080x1300.jpg);
+// img#intro_2_claire {
+//   width: 170px;
+//   margin-left: 30px;
+//   margin-top: -10px;
+//   margin-bottom: 10px;
+// }
 
-  /* size of background image is 1600 x 1000 px */
-  /* background-size: 1600px 970px; */
-}
+// div#do_this {
+//   flex: 1;
+//   margin-left: 30px;
+//   margin-top: -20px;
+//   width: 100px;
+// }
 
-#remote {
-  /* margin-left: 220px; */
-  float: right;
-  width: 650px;
-  margin-right: -30px;
-  margin-top: 590px;
-  /* margin-right: -140px; */
-  height: auto;
-  position: relative;
-}
-
-#img_claire {
-  position: absolute;
-  top: 200px;
-  left: 720px;
-  width: 280px;
-  padding: 16px;
-  border: 3px solid #d2b96e;
-  background-color: white;
-}
-
-#zodiac_leo {
-  position: absolute;
-  // width: 27%;
-  height: 55%;
-  top: -106px;
-  left: 100px;
-  opacity: 0.3;
-}
-
-.intro_2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 300px !important;
-  height: 940px;
-  margin-top: 570px;
-  margin-left: 54px;
-  padding-bottom: 300px;
-  float: left;
-}
-
-div#one {
-  flex-direction: flex-start;
-  margin-left: 50px;
-  // margin-left: 12px;
-  // text-align:left;
-}
-
-img#intro_2_claire {
-  width: 170px;
-  margin-left: 30px;
-  margin-top: -10px;
-  margin-bottom: 10px;
-}
-
-div#one hr {
-  margin-left: 0 !important;
-  margin-bottom: 50px;
-  width: 108px;
-  border: 0.8px solid #d2b96e;
-  background: #d2b96e;
-  // margin-bottom: 20px;
-}
-
-div#one #first_p {
-  font-size: 3.8em;
-  padding-bottom: 40px;
-  font-family: "FloralTheory";
-  color: #03aab6;
-  margin-top: -10px;
-}
-
-.intro_2 #second_p {
-  font-family: "tenor sans";
-  font-size: 1.2em;
-  padding-bottom: 20px;
-  padding-top: 34px;
-  color: #636363;
-}
-
-div#two {
-  flex: 1;
-  background-color: transparent;
-  vertical-align: middle;
-  margin-left: 50px;
-}
-
-div#do_this {
-  flex: 1;
-  margin-left: 30px;
-  margin-top: -20px;
-  width: 100px;
-}
-
-div#three {
-  flex: 1;
-  width: 300px;
-  margin-left: 10px;
-  margin-top: -10px;
-}
-
-div#three a {
-  margin-left: 140px;
-  margin-top: 0;
-  z-index: 1;
-}
-
-#two > div {
-  background-color: transparent;
-  width: 370px;
-  height: 400px;
-  margin-left: -10px;
-}
-
-div#two p {
-  padding-bottom: 14px;
-  line-height: 1.5;
-  font-size: 1em;
-  width: 370px;
-  text-align: justify;
-  font-family: "Cormorant Infant";
-  color: #636363;
-}
-
-#last_p {
-  margin-left: 25px;
-  // margin-top: -40px;
-  text-decoration: none;
-  color: #333333;
-  font-family: "FloralTheory";
-  font-size: 3.2em;
-}
-
-#last_p:hover {
-  color: #03aab6;
-}
 
 // Styling for Good Fit Area Home Page
 
-#stars_zodiac {
-  position: relative;
-  display: inline-block;
-  // margin-right: 10px;
-  float: right;
-  width: 700px;
-  margin-top: -200px;
-  opacity: 0.5;
-}
 
 // #moon_stars {
 //   opacity: 0.3;
@@ -517,149 +511,154 @@ div#two p {
 //   opacity: 0.3;
 // }
 
-.good_wrapper {
-  // position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+.wrap_goodFit {
+
+  h2 {
+    font-family: "FloralTheory" !important;
+    color: #333333;
+    font-size: 2.8em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: -74px;
+  }
+
+  .good_wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    .good_fit_hide_me {
+      position: relative;
+      margin: 0px 60px 150px 60px;
+      height: 340px;
+      width: 360px;
+      border: 6px solid rgba(210, 185, 110, 0.5);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+      h3 {
+        text-align: center;
+        font-size: 4em;
+        margin-top: 30px;
+        font-family: "FloralTheory";
+        font-weight: normal;
+        color: #03aab6;
+      }
+
+      hr {
+        color: black;
+        margin-top: -30px;
+      }
+    }
+
+    p {
+      font-size: 1.3em;
+      padding: 50px;
+      color: #636363;
+      font-family: "Cormorant Infant";
+      line-height: 25px;
+      position: absolute;
+      top: 18%;
+      text-align: center;
+    }
+  }
+
+  .secondHr {
+    width: 90em;
+    border-top: 2px solid #d2b962;
+    margin-bottom: 100px;
+  }
 }
 
-.wrap_goodFit h2 {
-  font-family: "FloralTheory" !important;
-  color: #333333;
-  font-size: 2.8em;
-  font-weight: normal;
-  text-align: center;
-  margin-bottom: 120px;
-  margin-top: -74px;
-}
-
-.good_wrapper h3 {
-  text-align: center;
-  font-size: 4em;
-  margin-top: 30px;
-  font-family: "FloralTheory";
-  font-weight: normal;
-  color: #03aab6;
-}
-
-.good_fit_hide_me hr {
-  color: black;
-  margin-top: -30px;
-}
-
-.good_fit_hide_me {
-  position: relative;
-  margin: 0px 60px 150px 60px;
-  // flex-basis: calc(14%);
-  height: 340px;
-  width: 360px;
-  // text-align: center;
-  // border: 8px solid rgba(207, 188, 100, 0.4);
-  border: 6px solid rgba(210, 185, 110, 0.5);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.good_wrapper p {
-  font-size: 1.3em;
-  padding: 50px;
-  color: #636363;
-  font-family: "Cormorant Infant";
-  line-height: 25px;
-  position: absolute;
-  top: 18%;
-  text-align: center;
-}
-
-.secondHr{
-  width: 90em;
-  border-top: 2px solid #d2b962;
-  margin-bottom: 100px;
-}
 
 .finalP_goodFit {
   height: auto;
   text-align: center;
   width: 100%;
   margin: 0 auto;
+
+  div {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .inside_finalP_1 p {
+    font-family: 'tenor sans';
+    font-family: 'Cormorant Infant';
+    font-size: 1.6em;
+    padding-bottom: 30px;
+    // text-transform: uppercase;
+    color: #666666;
+    line-height: 1.5em;
+    text-align: center;
+  }
+
+  .singleStar {
+    width: 2vw;
+    position: absolute;
+    right: 31%;
+    margin-top: -98px;
+    opacity: 0.8;
+  }
 }
 
-.finalP_goodFit div {
-  text-align: center;
-  margin: 0 auto;
-  width: 50%;
-}
-
-.inside_finalP_1 p {
-  font-family: 'tenor sans';
-  font-family: 'Cormorant Infant';
-  font-size: 1.6em;
-  padding-bottom: 30px;
-  // text-transform: uppercase;
-  color: #666666;
-  line-height: 1.5em;
-  text-align: center;
-}
 
 .inside_finalP_2 {
   padding-bottom: 50px;
+
+  h3 {
+    font-family: 'FloralTheory' !important;
+    color: #333333 !important;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 2.7em;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+
+  .button_dreamMotion {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 6px 46px !important;
+    text-align: center;
+    background: #fbf9ee;
+    // color: #333333 !important;
+    color: #03aab6 !important;
+    border: 3px solid #d2b96e;
+    transition: 0.3s !important;
+    font-family: "tenor sans";
+    font-size: 1.2em;
+
+    a {
+      text-decoration: none !important;
+    }
+  }
+
+  .button_dreamMotion:hover {
+    // color: #03aab6 !important;
+    // background: white !important;
+    // border: 3px solid #d2b96e;
+    background: #666666 !important;
+    color: white !important;
+    border: 3px solid #d2b96e;
+  }
+
+  .good_fit_contact {
+    padding-bottom: 50px;
+  }
 }
 
 
-.inside_finalP_2 h3 {
-  font-family: 'FloralTheory' !important;
-  color: #333333 !important;
-  text-transform: none;
-  font-weight:  normal;
-  font-size: 2.7em;
-  padding-top: 0px;
-  padding-bottom: 30px;
-
-}
 
 
-.button_dreamMotion {
-  text-decoration: none;
-  cursor: pointer;
-  padding: 6px 46px !important;
-  text-align: center;
-  background: #fbf9ee;
-  // color: #333333 !important;
-  color: #03aab6 !important;
-  border: 3px solid #d2b96e;
-  transition: 0.3s !important;
-  font-family: "tenor sans";
-  font-size: 1.2em;
-}
 
-.button_dreamMotion:hover {
-  // color: #03aab6 !important;
-  // background: white !important;
-  // border: 3px solid #d2b96e;
-  background: #666666!important;
-  color: white !important;
-  border: 3px solid #d2b96e;
-}
 
-.button_dreamMotion a {
-  text-decoration: none !important;
-}
+// .dreamMotion {
+//   padding: 20px 0;
+// }
 
-.dreamMotion {
-  padding: 20px 0;
-}
 
-.good_fit_contact {
-  padding-bottom: 50px;
-}
-
-.singleStar {
-  width: 2vw;
-  position: absolute;
-  right: 31%;
-  margin-top: -98px;
-  opacity: 0.8;
-}
 
 .threeStars {
   width: 7vw;
@@ -668,6 +667,7 @@ div#two p {
   margin-top: -60px;
   opacity: 0.7;
 }
+
 /* Back to top bird styling */
 #scroll {
   position: fixed;
@@ -1305,7 +1305,7 @@ div#submit_contact {
 
 /* Add padding BETWEEN each column */
 .port_row,
-.port_row > .column {
+.port_row>.column {
   padding: 18px;
 }
 
@@ -1334,6 +1334,7 @@ div#submit_contact {
 @media screen and (max-width: 1720px) {
   .column {
     width: 27%;
+
     h3 {
       font-size: 1.2vw;
     }
@@ -1343,19 +1344,21 @@ div#submit_contact {
 @media screen and (max-width: 900px) {
   .column {
     width: 40%;
+
     h3 {
       font-size: 1.8vw;
     }
   }
-   
 
-  
+
+
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+
     h3 {
       font-size: 3.6vw;
     }
@@ -1422,6 +1425,7 @@ div#submit_contact {
   margin: 50px auto;
   text-align: center;
 }
+
 .grid-item-1 {
   padding: 60px;
   font-size: 14px;
@@ -1458,6 +1462,7 @@ div#submit_contact {
   font-size: 1.2em;
   padding-top: 2em;
 }
+
 .grid-container p {
   line-height: 1.7em;
   font-size: 1.2em;
@@ -1556,6 +1561,7 @@ p.price {
   height: 40px;
   padding-bottom: 80px;
 }
+
 #read_blog a {
   font-family: "FloralTheory";
   color: #666666;
@@ -1701,10 +1707,10 @@ footer {
 
 // Styling Bottom of Footer 
 
-.footerLinks li + li {
+.footerLinks li+li {
   border-left: 2px solid #d1cfcf;
   padding: 0 6px 0 6px;
-  
+
 }
 
 
@@ -1745,7 +1751,7 @@ footer {
 }
 
 .footerLinks p {
-padding-right: 10px;
+  padding-right: 10px;
 }
 
 
