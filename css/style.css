@@ -88,31 +88,55 @@ body::after {
   margin: 0 auto;
   width: 1170px;
 }
-
+.inner_main_menu #menu {
+  background-color: white;
+  font-size: 12px;
+}
+.inner_main_menu #menu a {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.inner_main_menu #menu a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: lightgray;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.inner_main_menu #menu a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 .inner_main_menu ul {
   margin: 0;
   list-style: none;
   text-align: right;
 }
-
 .inner_main_menu ul li {
   float: none;
   display: inline-block;
   position: relative;
 }
-
 .inner_main_menu ul li:nth-child(1) {
   float: left;
 }
-
 .inner_main_menu ul li:nth-child(2) {
   float: left;
 }
-
 .inner_main_menu ul li:nth-child(3) {
   float: left;
 }
-
 .inner_main_menu ul li a {
   color: #666666;
   font-family: "tenor sans";
@@ -123,15 +147,12 @@ body::after {
   display: block;
   margin: 5px 20px 5px 20px;
 }
-
 .inner_main_menu ul li a:link {
   color: #666666;
 }
-
 .inner_main_menu ul li a:visited {
   color: #666666;
 }
-
 .inner_main_menu ul li a:hover {
   color: #333333;
 }
@@ -385,9 +406,11 @@ body::after {
   padding-top: 34px;
   color: #636363;
 }
+
 .intro_3 #two {
   width: 75%;
 }
+
 .intro_3 #two p {
   padding-bottom: 14px;
   line-height: 1.5;
@@ -396,6 +419,7 @@ body::after {
   font-family: "Cormorant Infant";
   color: #636363;
 }
+
 .intro_3 #two #last_p {
   margin-left: 58px;
   text-decoration: none;
@@ -403,9 +427,11 @@ body::after {
   font-family: "FloralTheory";
   font-size: 3.2em;
 }
+
 .intro_3 #two #last_p:hover {
   color: #03aab6;
 }
+
 .intro_3 #three .ajax {
   margin-left: 140px;
   margin-top: -10px;
@@ -423,6 +449,7 @@ body::after {
   flex-wrap: nowrap;
   justify-content: center;
 }
+
 .wrap_goodFit .good_wrapper p {
   font-size: 1.3em;
   padding: 50px;
@@ -433,6 +460,7 @@ body::after {
   top: 18%;
   text-align: center;
 }
+
 .wrap_goodFit h2 {
   font-family: "FloralTheory" !important;
   color: #333333;
@@ -442,6 +470,7 @@ body::after {
   margin-bottom: 120px;
   margin-top: 80px;
 }
+
 .wrap_goodFit .good_fit_hide_me {
   position: relative;
   margin: 0px 60px 150px 60px;
@@ -450,6 +479,7 @@ body::after {
   border: 6px solid rgba(210, 185, 110, 0.5);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
+
 .wrap_goodFit .good_fit_hide_me h3 {
   text-align: center;
   font-size: 4em;
@@ -458,10 +488,12 @@ body::after {
   font-weight: normal;
   color: #03aab6;
 }
+
 .wrap_goodFit .good_fit_hide_me hr {
   color: black;
   margin-top: -30px;
 }
+
 .wrap_goodFit .secondHr {
   width: 90em;
   border-top: 2px solid #d2b962;
@@ -519,17 +551,21 @@ body::after {
   font-family: "tenor sans";
   font-size: 1.2em;
 }
+
 .finalP_goodFit .inside_finalP_2 .button_dreamMotion:hover {
   background: #666666 !important;
   color: white !important;
   border: 3px solid #d2b96e;
 }
+
 .finalP_goodFit .inside_finalP_2 .button_dreamMotion a {
   text-decoration: none !important;
 }
+
 .finalP_goodFit .inside_finalP_2 .good_fit_contact {
   padding-bottom: 50px;
 }
+
 .finalP_goodFit .inside_finalP_2 .threeStars {
   width: 7vw;
   position: absolute;
