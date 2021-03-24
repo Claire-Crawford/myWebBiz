@@ -94,20 +94,25 @@ body::after {
   list-style: none;
   text-align: right;
 }
+
 .inner_main_menu ul li {
   float: none;
   display: inline-block;
   position: relative;
 }
+
 .inner_main_menu ul li:nth-child(1) {
   float: left;
 }
+
 .inner_main_menu ul li:nth-child(2) {
   float: left;
 }
+
 .inner_main_menu ul li:nth-child(3) {
   float: left;
 }
+
 .inner_main_menu ul li a {
   color: #666666;
   font-family: "tenor sans";
@@ -118,12 +123,15 @@ body::after {
   display: block;
   margin: 5px 20px 5px 20px;
 }
+
 .inner_main_menu ul li a:link {
   color: #666666;
 }
+
 .inner_main_menu ul li a:visited {
   color: #666666;
 }
+
 .inner_main_menu ul li a:hover {
   color: #333333;
 }
@@ -246,7 +254,7 @@ body::after {
   font-family: "FloralTheory";
   font-weight: normal;
   color: #363636;
-  font-size: 80px;
+  font-size: 5.1rem;
   letter-spacing: 2px;
   position: absolute;
   text-align: center;
@@ -262,6 +270,36 @@ body::after {
   }
   100% {
     top: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .moodboard_h2 {
+    font-size: 1.4rem;
+    padding-top: 30px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .moodboard_h2 {
+    font-size: 2.4rem;
+    padding-top: 50px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .moodboard_h2 {
+    font-size: 2.8rem;
+    padding-top: 60px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .moodboard_h2 {
+    font-size: 3.4rem;
+    padding-top: 60px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .moodboard_h2 {
+    font-size: 4.4rem;
+    padding-top: 68px;
   }
 }
 .craft_code_under_moodboard {
@@ -287,6 +325,36 @@ body::after {
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+  #just_below_moodboard hr {
+    width: 300px;
+    margin-top: 54px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #just_below_moodboard hr {
+    width: 460px;
+    margin-top: 82px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #just_below_moodboard hr {
+    width: 522px;
+    margin-top: 96px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #just_below_moodboard hr {
+    width: 627px;
+    margin-top: 96px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #just_below_moodboard hr {
+    width: 778px;
+    margin-top: 112px;
+  }
+}
 .crafting {
   display: flex;
   align-items: center;
@@ -333,6 +401,7 @@ body::after {
   position: relative;
   align-items: center;
 }
+
 .intro_1 #zodiac_leo {
   position: absolute;
   top: -440px;
@@ -346,6 +415,7 @@ body::after {
   top: -30vh;
   right: 14vw;
 }
+
 .intro_2 #img_claire {
   width: 280px;
   padding: 16px;
@@ -357,6 +427,7 @@ body::after {
   text-align: left;
   margin-right: 180px;
 }
+
 .intro_3 #one hr {
   margin-bottom: 50px;
   margin-left: 0;
@@ -364,12 +435,14 @@ body::after {
   border: 0.8px solid #d2b96e;
   background: #d2b96e;
 }
+
 .intro_3 #one #first_p {
   font-size: 3.8em;
   padding-bottom: 40px;
   font-family: "FloralTheory";
   color: #03aab6;
 }
+
 .intro_3 #one #second_p {
   font-family: "tenor sans";
   font-size: 1.2em;
@@ -394,13 +467,13 @@ body::after {
 .intro_3 #two #last_p {
   margin-left: 58px;
   text-decoration: none;
-  color: #333333;
+  color: #03aab6;
   font-family: "FloralTheory";
   font-size: 3.2em;
 }
 
 .intro_3 #two #last_p:hover {
-  color: #03aab6;
+  color: #333333;
 }
 
 .intro_3 #three .ajax {
@@ -477,11 +550,13 @@ body::after {
   width: 100%;
   margin: 0 auto;
 }
+
 .finalP_goodFit div {
   text-align: center;
   margin: 0 auto;
   width: 50%;
 }
+
 .finalP_goodFit .inside_finalP_1 p {
   font-family: "tenor sans";
   font-family: "Cormorant Infant";
@@ -491,6 +566,7 @@ body::after {
   line-height: 1.5em;
   text-align: center;
 }
+
 .finalP_goodFit .inside_finalP_1 .singleStar {
   width: 2vw;
   position: absolute;
@@ -498,9 +574,11 @@ body::after {
   margin-top: -98px;
   opacity: 0.8;
 }
+
 .finalP_goodFit .inside_finalP_2 {
   padding-bottom: 50px;
 }
+
 .finalP_goodFit .inside_finalP_2 h3 {
   font-family: "FloralTheory" !important;
   color: #333333 !important;
@@ -510,6 +588,7 @@ body::after {
   padding-top: 0px;
   padding-bottom: 30px;
 }
+
 .finalP_goodFit .inside_finalP_2 .button_dreamMotion {
   text-decoration: none;
   cursor: pointer;
@@ -1200,6 +1279,7 @@ div#submit_contact {
   .column {
     width: 27%;
   }
+
   .column h3 {
     font-size: 1.2vw;
   }
@@ -1208,6 +1288,7 @@ div#submit_contact {
   .column {
     width: 40%;
   }
+
   .column h3 {
     font-size: 1.8vw;
   }
@@ -1217,6 +1298,7 @@ div#submit_contact {
   .column {
     width: 100%;
   }
+
   .column h3 {
     font-size: 3.6vw;
   }

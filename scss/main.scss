@@ -1,15 +1,23 @@
-@charset "utf-8";
 @import "../vendor/MyFontsWebfontsKit/MyFontsWebfontsKit.css";
 @import "../vendor/hellopretty_elements/stylesheet.css";
 @import "../vendor/hellopretty_regular_macroman/stylesheet.css";
-
-@import "theme/fonts";
-
+/* Theme Fonts */
+@import "../vendor/MyFontsWebfontsKit/MyFontsWebfontsKit.css";
+@import "../vendor/hellopretty_elements/stylesheet.css";
+@import "../vendor/hellopretty_regular_macroman/stylesheet.css";
+@font-face {
+  font-family: "FloralTheory";
+  src: url("/assets/fonts/FloralTheory.otf") format("otf"), url("/assets/fonts/FloralTheoryRegular.ttf") format("ttf"), url("/assets/fonts/FloralTheoryRegular.woff") format("woff");
+}
+@font-face {
+  font-family: "FloralTheorySwashes";
+  src: url("/assets/fonts/FloralTheorySwashes.otf") format("otf");
+}
+/* Bootstrap Overrides */
 /* ==============================
    SETTING DEFAULT ELEMENT STYLES
    ==============================
 */
-
 aside,
 body,
 div,
@@ -38,7 +46,6 @@ th {
   padding: 0;
   text-decoration: none;
   list-style-type: none;
-
   /* background: transparent;
    -webkit-box-sizing: border-box;
    -moz-box-sizing: border-box;
@@ -59,12 +66,10 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-
   /* added to prevent horizontal scroll bar */
   /* need to fix this this and not use a hack.  Find the element that is overflowing */
   overflow-x: hidden;
   overflow-y: scroll;
-
   /* prevents scroll bounce */
   overscroll-behavior: none;
 }
@@ -75,128 +80,53 @@ body::after {
   height: 50px;
 }
 
-// shadow effect on header
 #main_menu.active {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
-// #main_menu {
-//   transition: 0.5s;
-//   width: 100%;
-//   position: fixed;
-//   overflow: hidden;
-//   background-color: white;
-//   z-index: 9999;
-//   padding: 80px 0;
-
-//   .logo_area {
-//     top: 44px;
-//     position: absolute;
-//     left: 50%;
-//     margin-left: -150px;
-//     text-align: center;
-//     transition: 0.5s;
-//     width: 350px;
-//   }
-
-//   #logo_Claire {
-//     width: auto;
-//     height: auto;
-//     transition: 0.5s;
-//     margin-top: 0px;
-//   }
-
-// }
-
-
-// navigation links
 .inner_main_menu {
   margin: 0 auto;
   width: 1170px;
 }
-  // #menu {
-  //   background-color: white;
-  //   font-size: 12px;
 
-  //   // underline from center on navigation links
-  //   a {
-  //     -webkit-transform: translateZ(0);
-  //     transform: translateZ(0);
-  //     -webkit-backface-visibility: hidden;
-  //     backface-visibility: hidden;
-  //     -moz-osx-font-smoothing: grayscale;
-  //   }
-
-  //   a:before {
-  //     content: "";
-  //     position: absolute;
-  //     width: 100%;
-  //     height: 2px;
-  //     bottom: 0;
-  //     left: 0;
-  //     background-color: rgb(211, 211, 211);
-  //     visibility: hidden;
-  //     -webkit-transform: scaleX(0);
-  //     transform: scaleX(0);
-  //     -webkit-transition: all 0.3s ease-in-out 0s;
-  //     transition: all 0.3s ease-in-out 0s;
-  //   }
-
-  //   a:hover:before {
-  //     visibility: visible;
-  //     -webkit-transform: scaleX(1);
-  //     transform: scaleX(1);
-  //   }
-
-  .inner_main_menu ul {
-    margin: 0;
-    list-style: none;
-    text-align: right;
-
-    li {
-      float: none;
-      display: inline-block;
-      position: relative;
-    }
-
-    li:nth-child(1) {
-      float: left;
-    }
-
-    li:nth-child(2) {
-      float: left;
-    }
-
-    li:nth-child(3) {
-      float: left;
-    }
-
-    li {
-      a {
-        color: #666666;
-        font-family: "tenor sans";
-        font-size: 1em;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        text-decoration: none;
-        display: block;
-        margin: 5px 20px 5px 20px;
-      }
-
-      a:link {
-        color: #666666;
-      }
-
-      a:visited {
-        color: #666666;
-      }
-
-      a:hover {
-        color: #333333;
-      }
-    }
-  }
-
+.inner_main_menu ul {
+  margin: 0;
+  list-style: none;
+  text-align: right;
+}
+.inner_main_menu ul li {
+  float: none;
+  display: inline-block;
+  position: relative;
+}
+.inner_main_menu ul li:nth-child(1) {
+  float: left;
+}
+.inner_main_menu ul li:nth-child(2) {
+  float: left;
+}
+.inner_main_menu ul li:nth-child(3) {
+  float: left;
+}
+.inner_main_menu ul li a {
+  color: #666666;
+  font-family: "tenor sans";
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  margin: 5px 20px 5px 20px;
+}
+.inner_main_menu ul li a:link {
+  color: #666666;
+}
+.inner_main_menu ul li a:visited {
+  color: #666666;
+}
+.inner_main_menu ul li a:hover {
+  color: #333333;
+}
 
 #menu {
   background-color: white;
@@ -253,7 +183,6 @@ body::after {
     width: 100%;
   }
 }
-
 #menu a {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -317,7 +246,7 @@ body::after {
   font-family: "FloralTheory";
   font-weight: normal;
   color: #363636;
-  font-size: 80px;
+  font-size: 5.1rem;
   letter-spacing: 2px;
   position: absolute;
   text-align: center;
@@ -331,11 +260,48 @@ body::after {
   0% {
     top: -600px;
   }
-
   100% {
     top: 0px;
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+  .moodboard_h2 {
+   font-size: 1.4rem;
+   padding-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .moodboard_h2 {
+    font-size: 2.4rem;
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .moodboard_h2 {
+   font-size: 2.8rem;
+   padding-top: 60px;
+   } 
+}
+
+@media only screen and (min-width: 992px) {
+  .moodboard_h2 {
+   font-size: 3.4rem;
+   padding-top: 60px;
+   } 
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .moodboard_h2 {
+   font-size: 4.4rem;
+   padding-top: 68px;
+  }
+}
+
 
 .craft_code_under_moodboard {
   position: relative;
@@ -348,18 +314,52 @@ body::after {
   from {
     top: 500px;
   }
-
   to {
     top: 1px;
   }
 }
-
 #just_below_moodboard hr {
   border: 0.8px solid #d2b96e;
   background: #d2b96e;
   width: 880px;
   margin-top: 118px;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #just_below_moodboard hr {
+   width: 300px;
+   margin-top: 54px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #just_below_moodboard hr {
+   width: 460px;
+   margin-top: 82px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  #just_below_moodboard hr {
+    width: 522px;
+    margin-top: 96px;
+   } 
+}
+
+@media only screen and (min-width: 992px) {
+  #just_below_moodboard hr {
+   width: 627px;
+   margin-top: 96px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #just_below_moodboard hr {
+   width: 778px;
+   margin-top: 112px;
+  }
 }
 
 .crafting {
@@ -382,14 +382,12 @@ body::after {
 
 .craft_code_under_moodboard h3 {
   font-family: "Cormorant Infant" !important;
-  // color: #d2b96e;
   color: #03aab6 !important;
   font-size: 0.9em;
   margin-top: 5px;
   text-align: center;
   letter-spacing: 1px;
 }
-
 
 .container_center_home {
   width: auto;
@@ -405,133 +403,80 @@ body::after {
   background: url(../images/torn_edge_bkgrd_2080x1300.jpg);
 }
 
-
 .intro_1 {
   text-align: right;
   position: relative;
   align-items: center;
-
-  #zodiac_leo {
-    position: absolute;
-    top: -440px;
-    left: 90px;
-    opacity: 0.3;
-  }
 }
-
-
-// #img_claire {
-//   width: 280px;
-//   padding: 16px;
-//   border: 3px solid #d2b96e;
-//   background-color: white;
-// }
+.intro_1 #zodiac_leo {
+  position: absolute;
+  top: -440px;
+  left: 90px;
+  opacity: 0.3;
+}
 
 .intro_2 {
   position: relative;
   text-align: right;
   top: -30vh;
   right: 14vw;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-content: center;
-  // width: 300px !important;
-  // height: 940px;
-  // margin-top: 570px;
-  // margin-left: 54px;
-  // padding-bottom: 300px;
-  // float: left;
-
-  #img_claire {
-    width: 280px;
-    padding: 16px;
-    border: 3px solid #d2b96e;
-    background-color: white;
-  }
+}
+.intro_2 #img_claire {
+  width: 280px;
+  padding: 16px;
+  border: 3px solid #d2b96e;
+  background-color: white;
 }
 
 .intro_3 {
   text-align: left;
   margin-right: 180px;
-
-  #one hr {
-    margin-bottom: 50px;
-    margin-left: 0;
-    width: 108px;
-    border: 0.8px solid #d2b96e;
-    background: #d2b96e;
-  }
-
-  // div#one {
-    // flex-direction: flex-start;
-    // margin-left: 50px;
-    // margin-left: 12px;
-    // text-align:left;
-  // }
-
-  #one #first_p {
-    font-size: 3.8em;
-    padding-bottom: 40px;
-    font-family: "FloralTheory";
-    color: #03aab6;
-  }
-
-  #one #second_p {
-    font-family: "tenor sans";
-    font-size: 1.2em;
-    padding-bottom: 20px;
-    padding-top: 34px;
-    color: #636363;
-  }
-
-  // hr {
-  //   margin-left: 0 !important;
-  //   margin-bottom: 50px;
-  //   width: 108px;
-  //   border: 0.8px solid #d2b96e;
-  //   background: #d2b96e;
-  //   // margin-bottom: 20px;
-  // }
+}
+.intro_3 #one hr {
+  margin-bottom: 50px;
+  margin-left: 0;
+  width: 108px;
+  border: 0.8px solid #d2b96e;
+  background: #d2b96e;
+}
+.intro_3 #one #first_p {
+  font-size: 3.8em;
+  padding-bottom: 40px;
+  font-family: "FloralTheory";
+  color: #03aab6;
+}
+.intro_3 #one #second_p {
+  font-family: "tenor sans";
+  font-size: 1.2em;
+  padding-bottom: 20px;
+  padding-top: 34px;
+  color: #636363;
 }
 
-div#two {
-  // flex: 1;
-  // background-color: transparent;
-  // vertical-align: middle;
-  // margin-left: 50px;
+.intro_3 #two {
+  width: 75%;
 }
 
-  .intro_3 #two {
-    width: 75%;
-  }
+.intro_3 #two p {
+  padding-bottom: 14px;
+  line-height: 1.5;
+  font-size: 1em;
+  text-align: justify;
+  font-family: "Cormorant Infant";
+  color: #636363;
+}
 
-  .intro_3 #two p{
-    padding-bottom: 14px;
-    line-height: 1.5;
-    font-size: 1em;
-    text-align: justify;
-    font-family: "Cormorant Infant";
-    color: #636363;
-  }
+.intro_3 #two #last_p {
+  margin-left: 58px;
+  text-decoration: none;
+ 
+  color: #03aab6;
+  font-family: "FloralTheory";
+  font-size: 3.2em;
+}
 
-    .intro_3 #two #last_p {
-    margin-left: 58px;
-    text-decoration: none;
-    color: #333333;
-    font-family: "FloralTheory";
-    font-size: 3.2em;
-  }
-
-    .intro_3 #two #last_p:hover {
-    color: #03aab6;
-  }
-
-  div#three {
-  // flex: 1;
-  // width: 300px;
-  // margin-left: 10px;
-  // margin-top: -10px;
+.intro_3 #two #last_p:hover {
+  color: #333333;
 }
 
 .intro_3 #three .ajax {
@@ -546,124 +491,112 @@ div#two {
   opacity: 0.5;
 }
 
+.wrap_goodFit .good_wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 
+.wrap_goodFit .good_wrapper p {
+  font-size: 1.3em;
+  padding: 50px;
+  color: #636363;
+  font-family: "Cormorant Infant";
+  line-height: 25px;
+  position: absolute;
+  top: 18%;
+  text-align: center;
+}
 
-  .wrap_goodFit .good_wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
+.wrap_goodFit h2 {
+  font-family: "FloralTheory" !important;
+  color: #333333;
+  font-size: 2.8em;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 120px;
+  margin-top: 80px;
+}
 
-  .wrap_goodFit .good_wrapper p {
-    font-size: 1.3em;
-    padding: 50px;
-    color: #636363;
-    font-family: "Cormorant Infant";
-    line-height: 25px;
-    position: absolute;
-    top: 18%;
-    text-align: center;
-  }
+.wrap_goodFit .good_fit_hide_me {
+  position: relative;
+  margin: 0px 60px 150px 60px;
+  height: 340px;
+  width: 360px;
+  border: 6px solid rgba(210, 185, 110, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
 
-  .wrap_goodFit h2 {
-    font-family: "FloralTheory" !important;
-    color: #333333;
-    font-size: 2.8em;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 120px;
-    margin-top: 80px;
-  }
+.wrap_goodFit .good_fit_hide_me h3 {
+  text-align: center;
+  font-size: 4em;
+  margin-top: 30px;
+  font-family: "FloralTheory";
+  font-weight: normal;
+  color: #03aab6;
+}
 
-    .wrap_goodFit .good_fit_hide_me {
-      position: relative;
-      margin: 0px 60px 150px 60px;
-      height: 340px;
-      width: 360px;
-      border: 6px solid rgba(210, 185, 110, 0.5);
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-    }
-      .wrap_goodFit .good_fit_hide_me h3 {
-        text-align: center;
-        font-size: 4em;
-        margin-top: 30px;
-        font-family: "FloralTheory";
-        font-weight: normal;
-        color: #03aab6;
-      }
+.wrap_goodFit .good_fit_hide_me hr {
+  color: black;
+  margin-top: -30px;
+}
 
-      .wrap_goodFit .good_fit_hide_me hr {
-        color: black;
-        margin-top: -30px;
-      }
-    
-
-  .wrap_goodFit .secondHr {
-    width: 90em;
-    border-top: 2px solid #d2b962;
-    margin-bottom: 100px;
-  }
-
-
+.wrap_goodFit .secondHr {
+  width: 90em;
+  border-top: 2px solid #d2b962;
+  margin-bottom: 100px;
+}
 
 .finalP_goodFit {
   height: auto;
   text-align: center;
   width: 100%;
   margin: 0 auto;
-
-  div {
-    text-align: center;
-    margin: 0 auto;
-    width: 50%;
-  }
-
-  .inside_finalP_1 p {
-    font-family: 'tenor sans';
-    font-family: 'Cormorant Infant';
-    font-size: 1.6em;
-    padding-bottom: 30px;
-    // text-transform: uppercase;
-    color: #666666;
-    line-height: 1.5em;
-    text-align: center;
-  }
-
-  .inside_finalP_1 .singleStar {
-    width: 2vw;
-    position: absolute;
-    right: 31%;
-    margin-top: -98px;
-    opacity: 0.8;
-  }
-
-  .inside_finalP_2 {
-    padding-bottom: 50px;
-
-    h3 {
-      font-family: 'FloralTheory' !important;
-      color: #333333 !important;
-      text-transform: none;
-      font-weight: normal;
-      font-size: 2.7em;
-      padding-top: 0px;
-      padding-bottom: 30px;
-    }
-
-    .button_dreamMotion {
-      text-decoration: none;
-      cursor: pointer;
-      padding: 6px 46px !important;
-      text-align: center;
-      background: #fbf9ee;
-      // color: #333333 !important;
-      color: #03aab6 !important;
-      border: 3px solid #d2b96e;
-      transition: 0.3s !important;
-      font-family: "tenor sans";
-      font-size: 1.2em;
-    }
-  }
+}
+.finalP_goodFit div {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+}
+.finalP_goodFit .inside_finalP_1 p {
+  font-family: "tenor sans";
+  font-family: "Cormorant Infant";
+  font-size: 1.6em;
+  padding-bottom: 30px;
+  color: #666666;
+  line-height: 1.5em;
+  text-align: center;
+}
+.finalP_goodFit .inside_finalP_1 .singleStar {
+  width: 2vw;
+  position: absolute;
+  right: 31%;
+  margin-top: -98px;
+  opacity: 0.8;
+}
+.finalP_goodFit .inside_finalP_2 {
+  padding-bottom: 50px;
+}
+.finalP_goodFit .inside_finalP_2 h3 {
+  font-family: "FloralTheory" !important;
+  color: #333333 !important;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 2.7em;
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+.finalP_goodFit .inside_finalP_2 .button_dreamMotion {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 6px 46px !important;
+  text-align: center;
+  background: #fbf9ee;
+  color: #03aab6 !important;
+  border: 3px solid #d2b96e;
+  transition: 0.3s !important;
+  font-family: "tenor sans";
+  font-size: 1.2em;
 }
 
 .finalP_goodFit .inside_finalP_2 .button_dreamMotion:hover {
@@ -679,7 +612,6 @@ div#two {
 .finalP_goodFit .inside_finalP_2 .good_fit_contact {
   padding-bottom: 50px;
 }
-
 
 .finalP_goodFit .inside_finalP_2 .threeStars {
   width: 7vw;
@@ -710,11 +642,7 @@ div#two {
   cursor: pointer;
 }
 
-
-
-
 /* ABOUT ME PAGE STYLING */
-
 #about_collage {
   margin-top: 220px;
   max-width: 100%;
@@ -907,7 +835,6 @@ p.wider_p_about_info {
   width: 100%;
   height: 700px;
   background-color: white;
-
 }
 
 hr.about_me_above_fun_facts {
@@ -923,19 +850,15 @@ hr.about_me_above_fun_facts {
   height: 360px;
   width: 1000px;
   background-color: #fbf9ee;
-
 }
 
 .slide_img {
   width: 350px;
-  // border: 14px solid white;
   margin-top: -102px;
   margin-right: 60px;
   border: 4px solid #d2b96e;
   outline: 10px solid white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-
-
 }
 
 /* Slideshow container */
@@ -950,7 +873,6 @@ hr.about_me_above_fun_facts {
   background: rgba(255, 255, 255, 0.8);
   width: 93%;
   height: 300px;
-
 }
 
 #fun_facts h3 {
@@ -964,7 +886,6 @@ hr.about_me_above_fun_facts {
   text-align: right;
   margin-right: 410px;
   top: 30px;
-
 }
 
 /* Slides */
@@ -1037,7 +958,6 @@ hr.about_me_above_fun_facts {
 }
 
 /* Styling Contact page */
-
 #contact_collage {
   margin-top: 180px;
   max-width: 100%;
@@ -1124,7 +1044,7 @@ form#contact_us {
   color: #666666;
 }
 
-input[type="text"],
+input[type=text],
 select,
 textarea {
   width: 320px;
@@ -1208,7 +1128,6 @@ textarea {
 }
 
 /* SUBMIT BUTTON ON CONTACT PAGE */
-
 div#submit_contact {
   text-align: center;
   align-items: center;
@@ -1217,12 +1136,11 @@ div#submit_contact {
   height: 500px;
 }
 
-#submit_contact input[type="button"] {
+#submit_contact input[type=button] {
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s !important;
   font-family: "FloralTheory";
-  // color: #16c0b7;
   color: #03aab6;
   letter-spacing: -0.009px;
   text-transform: none;
@@ -1233,7 +1151,7 @@ div#submit_contact {
   float: right;
 }
 
-#submit_contact input[type="button"]:hover {
+#submit_contact input[type=button]:hover {
   background: white !important;
   color: #636363 !important;
   font-size: 4em;
@@ -1248,13 +1166,10 @@ div#submit_contact {
   border: none;
   cursor: pointer;
 } */
-
 /* input[type=submit]:hover {
   background-color: rgb(88, 183, 229);
 } */
-
 /* Styling Portfolio Page */
-
 #portfolio_collage {
   margin-top: 220px;
   max-width: 100%;
@@ -1315,7 +1230,6 @@ div#submit_contact {
 }
 
 .port_row {
-  // margin: 8px -16px;
   margin: 0 auto;
   width: 80%;
   text-align: left;
@@ -1331,13 +1245,9 @@ div#submit_contact {
   font-size: 3em;
 }
 
-// .content h3 {
-//   font-size: 1.2vw;
-// }
-
 /* Add padding BETWEEN each column */
 .port_row,
-.port_row>.column {
+.port_row > .column {
   padding: 18px;
 }
 
@@ -1347,7 +1257,6 @@ div#submit_contact {
   width: 30%;
   margin-left: 10px;
 }
-
 
 /* Clear floats after rows */
 .row:after {
@@ -1363,43 +1272,32 @@ div#submit_contact {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-
 @media screen and (max-width: 1720px) {
   .column {
     width: 27%;
-
-    h3 {
-      font-size: 1.2vw;
-    }
+  }
+  .column h3 {
+    font-size: 1.2vw;
   }
 }
-
 @media screen and (max-width: 900px) {
   .column {
     width: 40%;
-
-    h3 {
-      font-size: 1.8vw;
-    }
   }
-
-
-
+  .column h3 {
+    font-size: 1.8vw;
+  }
 }
-
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
-
-    h3 {
-      font-size: 3.6vw;
-    }
+  }
+  .column h3 {
+    font-size: 3.6vw;
   }
 }
-
 /* Styling Services Page */
-
 #service_collage {
   margin-top: 220px;
   max-width: 100%;
@@ -1558,7 +1456,6 @@ p.price {
 }
 
 /* Styling Blog Page */
-
 #blog_collage {
   margin-top: 220px;
   max-width: 100%;
@@ -1610,12 +1507,10 @@ p.price {
 .blog_container img {
   width: 70%;
   padding: 120px 40px 0px 40px;
-  // margin-bottom: 100px;
 }
 
 .recent {
   margin-top: 100px;
-  // margin-bottom: 32px;
   text-align: left;
   margin-left: 200px;
   font-family: "FloralTheory";
@@ -1652,7 +1547,6 @@ p.price {
   color: #03aab6;
 }
 
-
 .blog_star {
   width: 30px;
   position: absolute;
@@ -1660,11 +1554,7 @@ p.price {
   margin-top: 60px;
 }
 
-
-
-
 /* STYLING FOOTER */
-
 footer {
   box-sizing: border-box;
   background: url(../images/torn_edge_bkgrd_2080x1300.jpg);
@@ -1747,8 +1637,6 @@ footer {
   bottom: 150px;
 }
 
-
-
 .column p {
   font-family: "Cormorant Infant";
   font-size: 1.4em;
@@ -1759,14 +1647,11 @@ footer {
   font-family: "FloralTheory";
   margin-top: 80px;
   margin-right: 40px;
-
 }
-
 
 .logo_container {
   text-align: center;
 }
-
 
 .ul_col1 {
   text-align: center;
@@ -1790,11 +1675,9 @@ footer {
   clear: both;
 }
 
-
 .logo_footer {
   width: 80%;
 }
-
 
 .right img {
   width: 2vw !important;
@@ -1817,9 +1700,8 @@ footer {
   font-size: 0.8em;
 }
 
-.footerLinks li+li {
+.footerLinks li + li {
   border-left: 2px solid #d1cfcf;
-
 }
 
 .footerLinks li {
@@ -1846,17 +1728,13 @@ footer {
 
 .footerlinks p {
   padding-right: 0 !important;
-
 }
-
-
 
 .basefooter {
   margin: 0 auto;
   width: 100%;
   text-align: center;
 }
-
 
 .footerLinks ul {
   padding: 0;
@@ -1868,11 +1746,7 @@ footer {
   float: left;
 }
 
-
-
-
 /* More About Me underline effect */
-
 *,
 *::before,
 *:after {
@@ -1881,9 +1755,9 @@ footer {
 
 .button,
 button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+input[type=submit],
+input[type=reset],
+input[type=button] {
   font-size: 0.7rem;
   font-family: Lora;
   position: relative;
@@ -1908,9 +1782,9 @@ input[type="button"] {
 
 .button span,
 button span,
-input[type="submit"] span,
-input[type="reset"] span,
-input[type="button"] span {
+input[type=submit] span,
+input[type=reset] span,
+input[type=button] span {
   display: block;
   position: absolute;
   transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
@@ -1921,9 +1795,9 @@ input[type="button"] span {
 
 .button span:first-child,
 button span:first-child,
-input[type="submit"] span:first-child,
-input[type="reset"] span:first-child,
-input[type="button"] span:first-child {
+input[type=submit] span:first-child,
+input[type=reset] span:first-child,
+input[type=button] span:first-child {
   height: 100%;
 }
 
@@ -1931,12 +1805,12 @@ input[type="button"] span:first-child {
 .button span::after,
 button span::before,
 button span::after,
-input[type="submit"] span::before,
-input[type="submit"] span::after,
-input[type="reset"] span::before,
-input[type="reset"] span::after,
-input[type="button"] span::before,
-input[type="button"] span::after {
+input[type=submit] span::before,
+input[type=submit] span::after,
+input[type=reset] span::before,
+input[type=reset] span::after,
+input[type=button] span::before,
+input[type=button] span::after {
   content: "";
   display: block;
   position: absolute;
@@ -1950,43 +1824,42 @@ input[type="button"] span::after {
 .button span:first-child::after,
 button span:first-child::before,
 button span:first-child::after,
-input[type="submit"] span:first-child::before,
-input[type="submit"] span:first-child::after,
-input[type="reset"] span:first-child::before,
-input[type="reset"] span:first-child::after,
-input[type="button"] span:first-child::before,
-input[type="button"] span:first-child::after {
+input[type=submit] span:first-child::before,
+input[type=submit] span:first-child::after,
+input[type=reset] span:first-child::before,
+input[type=reset] span:first-child::after,
+input[type=button] span:first-child::before,
+input[type=button] span:first-child::after {
   width: 1.5px;
   /* ** */
   height: 100%;
   bottom: 0;
   transform: scale3d(1, 0, 1);
   transform-origin: bottom center;
-  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
 }
 
 .button span:first-child::before,
 button span:first-child::before,
-input[type="submit"] span:first-child::before,
-input[type="reset"] span:first-child::before,
-input[type="button"] span:first-child::before {
+input[type=submit] span:first-child::before,
+input[type=reset] span:first-child::before,
+input[type=button] span:first-child::before {
   left: 0;
 }
 
 .button span:first-child::after,
 button span:first-child::after,
-input[type="submit"] span:first-child::after,
-input[type="reset"] span:first-child::after,
-input[type="button"] span:first-child::after {
+input[type=submit] span:first-child::after,
+input[type=reset] span:first-child::after,
+input[type=button] span:first-child::after {
   right: 0;
 }
 
 .button span:last-child,
 button span:last-child,
-input[type="submit"] span:last-child,
-input[type="reset"] span:last-child,
-input[type="button"] span:last-child {
+input[type=submit] span:last-child,
+input[type=reset] span:last-child,
+input[type=button] span:last-child {
   width: 100%;
   height: 1px;
 }
@@ -1995,43 +1868,42 @@ input[type="button"] span:last-child {
 .button span:last-child::after,
 button span:last-child::before,
 button span:last-child::after,
-input[type="submit"] span:last-child::before,
-input[type="submit"] span:last-child::after,
-input[type="reset"] span:last-child::before,
-input[type="reset"] span:last-child::after,
-input[type="button"] span:last-child::before,
-input[type="button"] span:last-child::after {
+input[type=submit] span:last-child::before,
+input[type=submit] span:last-child::after,
+input[type=reset] span:last-child::before,
+input[type=reset] span:last-child::after,
+input[type=button] span:last-child::before,
+input[type=button] span:last-child::after {
   height: 1px;
   width: 100%;
   bottom: 0;
   transform: scale3d(0, 1, 1);
-  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
 }
 
 .button span:last-child::before,
 button span:last-child::before,
-input[type="submit"] span:last-child::before,
-input[type="reset"] span:last-child::before,
-input[type="button"] span:last-child::before {
+input[type=submit] span:last-child::before,
+input[type=reset] span:last-child::before,
+input[type=button] span:last-child::before {
   left: 0;
   transform-origin: bottom left;
 }
 
 .button span:last-child::after,
 button span:last-child::after,
-input[type="submit"] span:last-child::after,
-input[type="reset"] span:last-child::after,
-input[type="button"] span:last-child::after {
+input[type=submit] span:last-child::after,
+input[type=reset] span:last-child::after,
+input[type=button] span:last-child::after {
   right: 0;
   transform-origin: bottom right;
 }
 
 .button::after,
 button::after,
-input[type="submit"]::after,
-input[type="reset"]::after,
-input[type="button"]::after {
+input[type=submit]::after,
+input[type=reset]::after,
+input[type=button]::after {
   content: "";
   width: 80%;
   left: 50%;
@@ -2039,8 +1911,7 @@ input[type="button"]::after {
   /* ** */
   bottom: 0;
   transform: translatex(-50%);
-  transition: width 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  transition: width 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
   display: block;
   position: absolute;
   background: white;
@@ -2048,12 +1919,11 @@ input[type="button"]::after {
 
 .button:hover,
 button:hover,
-input[type="submit"]:hover,
-input[type="button"]:hover {
+input[type=submit]:hover,
+input[type=button]:hover {
   opacity: 1;
   outline: 0;
   color: black !important;
-
   text-decoration: none;
   transition: color 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
 }
@@ -2062,78 +1932,68 @@ input[type="button"]:hover {
 .button:hover span:first-child::after,
 button:hover span:first-child::before,
 button:hover span:first-child::after,
-input[type="submit"]:hover span:first-child::before,
-input[type="submit"]:hover span:first-child::after,
-input[type="reset"]:hover span:first-child::before,
-input[type="reset"]:hover span:first-child::after,
-input[type="button"]:hover span:first-child::before,
-input[type="button"]:hover span:first-child::after {
+input[type=submit]:hover span:first-child::before,
+input[type=submit]:hover span:first-child::after,
+input[type=reset]:hover span:first-child::before,
+input[type=reset]:hover span:first-child::after,
+input[type=button]:hover span:first-child::before,
+input[type=button]:hover span:first-child::after {
   transform: scale3d(1, 1, 1);
   background: #d2b96e !important;
-
-  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
 }
 
 .button:hover span:first-child::before,
 .button:hover span:first-child::after,
 button:hover span:first-child::before,
 button:hover span:first-child::after,
-input[type="submit"]:hover span:first-child::before,
-input[type="submit"]:hover span:first-child::after,
-input[type="reset"]:hover span:first-child::before,
-input[type="reset"]:hover span:first-child::after,
-input[type="button"]:hover span:first-child::before,
-input[type="button"]:hover span:first-child::after {
+input[type=submit]:hover span:first-child::before,
+input[type=submit]:hover span:first-child::after,
+input[type=reset]:hover span:first-child::before,
+input[type=reset]:hover span:first-child::after,
+input[type=button]:hover span:first-child::before,
+input[type=button]:hover span:first-child::after {
   transform: scale3d(1, 1, 1);
   background: #d2b96e !important;
-
-  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
 }
 
 .button:hover span:last-child::before,
 .button:hover span:last-child::after,
 button:hover span:last-child::before,
 button:hover span:last-child::after,
-input[type="submit"]:hover span:last-child::before,
-input[type="submit"]:hover span:last-child::after,
-input[type="reset"]:hover span:last-child::before,
-input[type="reset"]:hover span:last-child::after,
-input[type="button"]:hover span:last-child::before,
-input[type="button"]:hover span:last-child::after {
+input[type=submit]:hover span:last-child::before,
+input[type=submit]:hover span:last-child::after,
+input[type=reset]:hover span:last-child::before,
+input[type=reset]:hover span:last-child::after,
+input[type=button]:hover span:last-child::before,
+input[type=button]:hover span:last-child::after {
   transform: scale3d(1, 1, 1);
   background: #d2b96e !important;
-
-  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
 }
 
 .button:hover span:last-child::before,
 .button:hover span:last-child::after,
 button:hover span:last-child::before,
 button:hover span:last-child::after,
-input[type="submit"]:hover span:last-child::before,
-input[type="submit"]:hover span:last-child::after,
-input[type="reset"]:hover span:last-child::before,
-input[type="reset"]:hover span:last-child::after,
-input[type="button"]:hover span:last-child::before,
-input[type="button"]:hover span:last-child::after {
+input[type=submit]:hover span:last-child::before,
+input[type=submit]:hover span:last-child::after,
+input[type=reset]:hover span:last-child::before,
+input[type=reset]:hover span:last-child::after,
+input[type=button]:hover span:last-child::before,
+input[type=button]:hover span:last-child::after {
   transform: scale3d(1, 1, 1);
   background: #d2b96e !important;
-
-  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
 }
 
 .button:hover::after,
 button:hover::after,
-input[type="submit"]:hover::after,
-input[type="reset"]:hover::after,
-input[type="button"]:hover::after {
+input[type=submit]:hover::after,
+input[type=reset]:hover::after,
+input[type=button]:hover::after {
   width: 100%;
   background: #d2b96e !important;
-
-  transition: width 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  transition: width 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
 }
