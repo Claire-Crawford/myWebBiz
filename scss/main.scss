@@ -95,7 +95,6 @@ body::after {
   text-align: right;
 }
 .inner_main_menu ul li {
-  float: none;
   display: inline-block;
   position: relative;
 }
@@ -140,6 +139,8 @@ body::after {
   margin-top: 0px;
 }
 
+
+
 #main_menu {
   transition: 0.5s;
   width: 100%;
@@ -149,6 +150,14 @@ body::after {
   z-index: 9999;
   padding: 80px 0;
 }
+
+
+@media only screen and (max-width: 600px) {
+  #main_menu {
+  padding:20px 0;
+  }
+}
+
 
 .logo_area {
   top: 62px;
@@ -160,7 +169,7 @@ body::after {
   width: 350px;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .slicknav_menu {
     display: block;
   }
@@ -182,7 +191,13 @@ body::after {
     height: auto;
     width: 100%;
   }
+#logo_Claire {
+  
+  margin-left: 15%;
+  margin-top: 10%;
 }
+}
+
 #menu a {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -220,6 +235,13 @@ body::after {
   display: block;
   height: auto;
 }
+
+// @media only screen and (max-width: 600px) {
+//   #moodboard{
+//   margin-top: 100px;
+//   }
+// }
+
 
 #just_below_moodboard {
   display: flex;
@@ -268,7 +290,7 @@ body::after {
 
 @media only screen and (max-width: 600px) {
   .moodboard_h2 {
-   font-size: 1.4rem;
+   font-size: 1.6rem;
    padding-top: 25px;
   }
 }
@@ -329,7 +351,7 @@ body::after {
 
 @media only screen and (max-width: 600px) {
   #just_below_moodboard hr {
-   width: 300px;
+   width: 320px;
    margin-top: 46px;
   }
 }
@@ -359,7 +381,7 @@ body::after {
 @media only screen and (min-width: 1200px) {
   #just_below_moodboard hr {
    width: 778px;
-   margin-top: 112px;
+   margin-top: 120px;
   }
 }
 
@@ -382,11 +404,20 @@ body::after {
   margin-bottom: 0px !important;
 }
 
+// @media only screen and (max-width: 370px) {
+//   #just_below_moodboard p {
+//    font-size: 80%;
+//    width: 90%;
+//    margin-top: -26px;
+//   }
+//  }
+ 
+
 @media only screen and (max-width: 600px) {
  #just_below_moodboard p {
-  font-size: 66%;
-  width: 70%;
-  margin-top: -20px;
+  font-size: 86%;
+  width: 92%;
+  margin-top: -26px;
  }
 }
 
@@ -402,7 +433,7 @@ body::after {
   #just_below_moodboard p {
    font-size: 80%;
    width: 74%;
-   margin-top: -10px;
+   margin-top: -20px;
   }
  }
 
@@ -410,6 +441,7 @@ body::after {
   #just_below_moodboard p {
    font-size: 1rem;
    width: 74%;
+   margin-top: -10px;
   }
  }
 
@@ -417,7 +449,7 @@ body::after {
   #just_below_moodboard p {
   font-size: 1.1rem;
    width: 70%;
-   margin-top: 2px;
+   margin-top: -10px;
   }
  }
 
@@ -425,14 +457,9 @@ body::after {
   #just_below_moodboard p {
    width: 54%;
    font-size: 1.3rem;
-   margin-top: 2px;
+   margin-top: -10px;
   }
  }
-
-
-
-
- 
 
 
 .craft_code_under_moodboard h3 {
@@ -443,6 +470,27 @@ body::after {
   text-align: center;
   letter-spacing: 1px;
 }
+
+@media only screen and (max-width: 600px) {
+  .craft_code_under_moodboard h3{
+  font-size: 0.3em;
+  }
+ }
+
+@media only screen and (max-width: 900px) {
+  .craft_code_under_moodboard h3{
+  font-size: 0.4em;
+  }
+ }
+
+ @media only screen and (max-width: 1200px) {
+  .craft_code_under_moodboard h3{
+  font-size: 0.7em;
+  }
+ }
+
+
+
 
 .container_center_home {
   width: auto;
