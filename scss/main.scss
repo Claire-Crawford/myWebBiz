@@ -506,6 +506,12 @@ body::after {
   background: url(../images/torn_edge_bkgrd_2080x1300.jpg);
 }
 
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    margin-top: -100px;
+  }
+}
+
 .intro_1 {
   text-align: right;
   position: relative;
@@ -516,6 +522,15 @@ body::after {
   top: -440px;
   left: 90px;
   opacity: 0.3;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro_1 #zodiac_leo {
+    position: absolute;
+    top: -1360px;
+    left: 10px;
+    width: 90%;
+  }
 }
 
 .intro_2 {
@@ -547,6 +562,14 @@ body::after {
   padding-bottom: 40px;
   font-family: "FloralTheory";
   color: #03aab6;
+}
+
+@media only screen and (max-width: 600px) {
+  #first_p {
+    font-size: 3em;
+    padding-bottom: 40px;
+    margin-top: 100px;
+  }
 }
 .intro_3 #one #second_p {
   font-family: "tenor sans";
@@ -593,6 +616,7 @@ body::after {
   width: 700px;
   opacity: 0.5;
 }
+
 
 .wrap_goodFit .good_wrapper {
   display: flex;
