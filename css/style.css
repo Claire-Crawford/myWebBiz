@@ -483,7 +483,7 @@ body::after {
 @media only screen and (max-width: 600px) {
   .intro_1 #zodiac_leo {
     position: absolute;
-    top: -1360px;
+    top: -1380px;
     left: 10px;
     width: 90%;
   }
@@ -502,6 +502,18 @@ body::after {
   background-color: white;
 }
 
+@media only screen and (max-width: 600px) {
+  .intro_2 {
+    top: -242vh;
+    right: 50vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .intro_2 #img_claire {
+    width: 160px;
+    position: absolute;
+  }
+}
 .intro_3 {
   text-align: left;
   margin-right: 180px;
@@ -515,6 +527,12 @@ body::after {
   background: #d2b96e;
 }
 
+@media only screen and (max-width: 600px) {
+  .intro_3 #one hr {
+    margin-left: 32px;
+    width: 88px;
+  }
+}
 .intro_3 #one #first_p {
   font-size: 3.8em;
   padding-bottom: 40px;
@@ -526,7 +544,8 @@ body::after {
   #first_p {
     font-size: 3em;
     padding-bottom: 40px;
-    margin-top: 100px;
+    margin-top: 120px;
+    margin-left: 40px;
   }
 }
 .intro_3 #one #second_p {
@@ -537,6 +556,14 @@ body::after {
   color: #636363;
 }
 
+@media only screen and (max-width: 600px) {
+  .intro_3 #one #second_p {
+    font-size: 1.2em;
+    padding-bottom: 20px;
+    padding-top: 34px;
+    margin-left: 40px;
+  }
+}
 .intro_3 #two {
   width: 75%;
 }
@@ -550,6 +577,11 @@ body::after {
   color: #636363;
 }
 
+@media only screen and (max-width: 600px) {
+  .intro_3 #two p {
+    margin-left: 20px;
+  }
+}
 .intro_3 #two #last_p {
   margin-left: 58px;
   text-decoration: none;
